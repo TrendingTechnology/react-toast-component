@@ -1,0 +1,44 @@
+{
+  "name": "react-toast-component",
+  "version": "0.0.3",
+  "description": "React Toast Component",
+  "main": "src/Toast/index.js",
+  "dependencies": {
+    "butt": "^2.0.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sioanis/react-toast.git"
+  },
+  "keywords": [
+    "react",
+    "toast"
+  ],
+  "author": "Sue Ann Ioanis",
+  "license": "ISC",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/sioanis/react-toast/issues"
+  },
+  "homepage": "https://github.com/sioanis/react-toast#readme"
+}
