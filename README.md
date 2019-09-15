@@ -5,6 +5,10 @@ https://www.npmjs.com/package/react-toast-component
 A lightweight React toast notification component.
 
 <img src="http://sioanis.com/toast.png" width="400px" />
+<img src="http://sioanis.com/toast-success.png" width="400px" />
+<img src="http://sioanis.com/toast-error.png" width="400px" />
+<img src="http://sioanis.com/toast-info.png" width="400px" />
+<img src="http://sioanis.com/toast-warning.png" width="400px" />
 
 ## Installation
 
@@ -27,6 +31,7 @@ A lightweight React toast notification component.
 Examples: `.jsx`
 
 #### Pure Component
+
 ```
 <Toast
   isOpen={isOpen}
@@ -36,8 +41,9 @@ Examples: `.jsx`
   duration={TOAST_NO_REDUX_DURATION}
     closeCallback={() => setToast(false)}
     classNames={["success"]}
-  />
+/>
 ```
+
 ```
 <Toast
   isOpen
@@ -45,6 +51,7 @@ Examples: `.jsx`
   description="Your item was successfully added to your cart."
 />
 ```
+
 ```
 <Toast
   isOpen={false}
