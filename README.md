@@ -48,8 +48,8 @@ Examples: `.jsx`
   description="Dunc the Lunk, thick as a castle wall. Your action has been completed."
   autoDismiss={false}
   duration={TOAST_NO_REDUX_DURATION}
-    closeCallback={() => setToast(false)}
-    classNames={["success"]}
+  closeCallback={() => setToast(false)}
+  classNames={["success"]}
 />
 ```
 
