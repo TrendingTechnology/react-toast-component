@@ -15,27 +15,29 @@ A lightweight React toast notification component.
 | `isOpen`    | `false`          | `false`  |
 | `animation` | `1s ease-in-out` | `true`   |
 
-Example:
+Examples: `.jsx`
+
+#### Pure Component
 
 ```
 <Toast
-  isOpen={}
-  animation={}
+  isOpen={true}
 />
 ```
 
 ```
 <Toast
-  isOpen={}
-  animation={}
+  isOpen={false}
 >
-  <h1>Your custom element</h1>
+  <h1>Your custom elements can go in here.</h1>
 </Toast>
 ```
 
 #### With Redux
 
-connect toast to store
+Connect toast to store.
+
+`import { ToastContainer } from 'react-toast-component'`
 
 toastActions.js
 
@@ -49,4 +51,4 @@ toastReducers.js
 
 ```
 
-#### Without Redux (HOC - wip)
+#### Without Redux (HOC)
