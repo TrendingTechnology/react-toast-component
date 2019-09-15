@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import ToastActions from "../toastActions";
+import { connect } from "react-redux";
+import toastActions from "../toastActions";
 import ToastContainer from "../ToastContainer";
 import Toast from "../Toast";
 
@@ -7,7 +8,7 @@ import "./style.css";
 
 const TOAST_NO_REDUX_DURATION = 5000;
 
-export default function Options(props) {
+function Options(props) {
   const { dispatch } = props;
   const [isOpen, setToast] = useState(false);
 
@@ -24,9 +25,21 @@ export default function Options(props) {
       />
       <ToastContainer />
       <button onClick={() => setToast(true)}>Toast</button>
-      <button onClick={() => dispatch(ToastActions.addToast())}>
+      <button
+        onClick={() =>
+          dispatch(
+            toastActions.addToast({
+              title: "Added",
+              description: "Your item was added.",
+              duration: "5000"
+            })
+          )
+        }
+      >
         ToastContainer
       </button>
     </header>
   );
 }
+
+export default connect()(Options);
