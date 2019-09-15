@@ -41,6 +41,8 @@ Examples: `.jsx`
 
 #### Pure Component
 
+`import Toast from 'react-toast-component'`
+
 ```
 <Toast
   isOpen={isOpen}
@@ -79,7 +81,7 @@ Connect toast to store.
 `toastReducer.js` : Add the reducer to your redux store.
 
 ```
-import { ToastReducer } from 'react-toast-component'
+import toastReducer from 'react-toast-component'
 ```
 
 ```
@@ -92,7 +94,7 @@ combineReducers({
 Add `ToastContainer` with optional children.
 
 ```
-import { ToastContainer } from 'react-toast-component'
+import ToastContainer from 'react-toast-component'
 ```
 
 ```
@@ -108,7 +110,7 @@ import { ToastContainer } from 'react-toast-component'
 `toastActions.js` : Dispatch actions to update toast properties.
 
 ```
-import { ToastActions } from 'react-toast-component'
+import toastActions from 'react-toast-component'
 ```
 
 ```
