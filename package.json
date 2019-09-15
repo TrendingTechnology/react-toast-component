@@ -5,6 +5,7 @@
   "main": "src/Toast/index.js",
   "dependencies": {
     "butt": "^2.0.0",
+    "classnames": "^2.2.6",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-redux": "^7.1.1",

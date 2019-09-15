@@ -10,12 +10,31 @@
   top: 10px;
   right: -100%;
   transition: 1s ease-in;
-  border-radius: 5px;
   z-index: 10000;
-  color: black;
   line-height: 1;
-  padding: 10px;
+  padding: 10px 10px 10px 6px;
   text-align: left;
+  color: #333;
+  border-left: 10px #e5e5e5 solid;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+  letter-spacing: -0.5px;
+}
+
+.ReactToast.success {
+  border-left-color: #2bde3f;
+}
+
+.ReactToast.info {
+  border-left-color: #1d72f3;
+}
+
+.ReactToast.warning {
+  border-left-color: #ffc007;
+}
+
+.ReactToast.error {
+  border-left-color: rgb(235, 77, 96);
 }
 
 .ReactToast.isOpen {
@@ -24,8 +43,8 @@
 }
 
 .ReactToast--title {
-  margin: 0;
-  font-size: 24px;
+  margin: 0 0 5px 0;
+  font-size: 22px;
 }
 
 .ReactToast--description {
@@ -36,5 +55,9 @@
   position: absolute;
   top: 0;
   right: 0;
-  border-radius: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.6);
 }
