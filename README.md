@@ -50,19 +50,23 @@ combineReducers({
 })
 ```
 
+Add `ToastContainer` with optional children.
+
 ```
 import { ToastContainer } from 'react-toast-component'
 ```
 
 ```
-<ToastContainer
-  isOpen={false}
->
+<ToastContainer />
+```
+
+```
+<ToastContainer>
   <h1>Your custom elements can go in here.</h1>
 </ToastContainer>
 ```
 
-`toastActions.js` : Dispatch action when toast should display.
+`toastActions.js` : Dispatch actions to update toast properties.
 
 ```
 import { ToastActions } from 'react-toast-component'
