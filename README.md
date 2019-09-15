@@ -21,7 +21,7 @@ Examples: `.jsx`
 
 ```
 <Toast
-  isOpen={true}
+  isOpen
 />
 ```
 
@@ -37,18 +37,35 @@ Examples: `.jsx`
 
 Connect toast to store.
 
-`import { ToastContainer } from 'react-toast-component'`
+`toastReducer.js` : Add the reducer to your redux store.
 
-toastActions.js
-
+```
+import { ToastReducer } from 'react-toast-component'
 ```
 
 ```
-
-toastReducers.js
-
+combineReducers({
+  ...yourExistingReducers,
+  ToastReducer,
+})
 ```
 
+```
+import { ToastContainer } from 'react-toast-component'
+```
+
+```
+<ToastContainer
+  isOpen={false}
+>
+  <h1>Your custom elements can go in here.</h1>
+</ToastContainer>
+```
+
+`toastActions.js` : Dispatch action when toast should display.
+
+```
+import { ToastActions } from 'react-toast-component'
 ```
 
 #### Without Redux (HOC)
