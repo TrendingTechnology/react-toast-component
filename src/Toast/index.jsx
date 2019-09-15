@@ -7,8 +7,9 @@ export default function Toast(props) {
     children,
     isOpen,
     duration = 3000,
-    title = "Title Goes Here",
-    description = "Description Goes Here"
+    title,
+    description,
+    hasCloseBtn = true
   } = props;
 
   const [isOpenState, setOpen] = useState(isOpen);
@@ -20,10 +21,12 @@ export default function Toast(props) {
 
   return (
     <div className={`ReactToast${isOpenState ? " isOpen" : ""}`}>
-      <h2 className="ReactToast--title">{title}</h2>
-      <div className="ReactToast--description">{description}</div>
+      {!!title && <h2 className="ReactToast--title">{title}</h2>}
+      {!!description && (
+        <div className="ReactToast--description">{description}</div>
+      )}
       {children}
-      <button className="ReactToast--close">x</button>
+      {!!hasCloseBtn && <button className="ReactToast--close">x</button>}
     </div>
   );
 }

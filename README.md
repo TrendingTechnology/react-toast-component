@@ -10,10 +10,14 @@ A lightweight React toast notification component.
 
 ## Options
 
-| Prop         | Default          | Optional |
-| ------------ | ---------------- | -------- |
-| `isOpen`     | `false`          | `false`  |
-| `transition` | `3s ease-in-out` | `true`   |
+| Prop          | Default | Optional |
+| ------------- | ------- | -------- |
+| `isOpen`      | `false` | `true`   |
+| `hasCloseBtn` | `true`  | `true`   |
+| `duration`    | `3000`  | `true`   |
+| `title`       |         | `true`   |
+| `description` |         | `true`   |
+| `children`    |         | `true`   |
 
 Examples: `.jsx`
 
@@ -30,11 +34,11 @@ Examples: `.jsx`
 ```
 <Toast
   isOpen={false}
-  transition="5s ease"
+  duration={2000}
   title="Successfully Deleted"
   description="Your item was successfully deleted from your cart."
 >
-  <h1>Your custom elements can go in here.</h1>
+  <h1>Add your own custom elements in here.</h1>
 </Toast>
 ```
 
@@ -81,7 +85,7 @@ import { ToastActions } from 'react-toast-component'
 toastActions.showToast({
   title: 'Added',
   description: 'Your item was added.',
-  transition: '5s ease-in-out',
+  duration: '5000',
 });
 ```
 
