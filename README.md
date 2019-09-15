@@ -1,10 +1,10 @@
-# React Toast Component 🍞 (Work in Progress)
+# React Toast Component
 
 https://www.npmjs.com/package/react-toast-component
 
 A lightweight React toast notification component.
 
-<i>Default:</i> 
+<i>Default:</i>
 <img src="http://sioanis.com/toast.png?" width="400px" />
 
 ## Installation
@@ -27,14 +27,13 @@ A lightweight React toast notification component.
 
 Examples: `.jsx`
 
-
 <i>Success:</i>
 <img src="http://sioanis.com/toast-success.png" width="400px" />
 
 <i>Error:</i>
 <img src="http://sioanis.com/toast-error.png" width="400px" />
 
-<i>Info:</i> 
+<i>Info:</i>
 <img src="http://sioanis.com/toast-info.png" width="400px" />
 
 <i>Warning:</i>
@@ -73,7 +72,7 @@ Examples: `.jsx`
 </Toast>
 ```
 
-#### With Redux
+#### With Redux (wip)
 
 Connect toast to store.
 

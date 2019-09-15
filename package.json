@@ -2,7 +2,7 @@
   "name": "react-toast-component",
   "version": "1.0.0",
   "description": "React Toast Component",
-  "main": "src/Toast/index.js",
+  "main": "src/",
   "dependencies": {
     "butt": "^2.0.0",
     "classnames": "^2.2.6",
