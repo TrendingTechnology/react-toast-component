@@ -7,18 +7,6 @@ A lightweight React toast notification component.
 <i>Default:</i> 
 <img src="http://sioanis.com/toast.png?" width="400px" />
 
-<i>Success:</i>
-<img src="http://sioanis.com/toast-success.png" width="400px" />
-
-<i>Error:</i>
-<img src="http://sioanis.com/toast-error.png" width="400px" />
-
-<i>Info:</i> 
-<img src="http://sioanis.com/toast-info.png" width="400px" />
-
-<i>Warning:</i>
-<img src="http://sioanis.com/toast-warning.png" width="400px" />
-
 ## Installation
 
 `npm i react-toast-component`
@@ -38,6 +26,19 @@ A lightweight React toast notification component.
 | `classNames`    | `[]`    | `true`   | Array of class names to add to the toast. (existing: `success`, `info`, `warning`, `error`) |
 
 Examples: `.jsx`
+
+
+<i>Success:</i>
+<img src="http://sioanis.com/toast-success.png" width="400px" />
+
+<i>Error:</i>
+<img src="http://sioanis.com/toast-error.png" width="400px" />
+
+<i>Info:</i> 
+<img src="http://sioanis.com/toast-info.png" width="400px" />
+
+<i>Warning:</i>
+<img src="http://sioanis.com/toast-warning.png" width="400px" />
 
 #### Pure Component
 
