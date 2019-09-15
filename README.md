@@ -1,4 +1,4 @@
-# React Toast Component 🍞
+# React Toast Component 🍞 (Work in Progress)
 
 https://www.npmjs.com/package/react-toast-component
 
