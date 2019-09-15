@@ -72,4 +72,4 @@ import { ToastContainer } from 'react-toast-component'
 import { ToastActions } from 'react-toast-component'
 ```
 
-#### Without Redux (HOC)
+#### Without Redux (HOC) - coming soon
