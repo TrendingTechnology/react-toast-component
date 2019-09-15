@@ -41,7 +41,9 @@ Examples: `.jsx`
 
 #### Pure Component
 
-`import Toast from 'react-toast-component'`
+```
+import Toast from 'react-toast-component'
+```
 
 ```
 <Toast
@@ -49,7 +51,7 @@ Examples: `.jsx`
   title="App Notification 🍞"
   description="Dunc the Lunk, thick as a castle wall. Your action has been completed."
   autoDismiss={false}
-  duration={TOAST_NO_REDUX_DURATION}
+  duration={3000}
   closeCallback={() => setToast(false)}
   classNames={["success"]}
 />
@@ -74,7 +76,7 @@ Examples: `.jsx`
 </Toast>
 ```
 
-#### With Redux (wip)
+#### With Redux (WIP)
 
 Connect toast to store.
 
