@@ -20,7 +20,7 @@ export default function Options(props) {
         autoDismiss={false}
         duration={TOAST_NO_REDUX_DURATION}
         closeCallback={() => setToast(false)}
-        classNames={["success"]}
+        classNames={["warning"]}
       />
       <ToastContainer />
       <button onClick={() => setToast(true)}>Toast</button>
