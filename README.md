@@ -12,7 +12,7 @@ A lightweight React toast notification component.
 
 | Prop          | Default | Optional |
 | ------------- | ------- | -------- |
-| `isOpen`      | `false` | `true`   |
+| `isOpen`      | `false` | `false`  |
 | `hasCloseBtn` | `true`  | `true`   |
 | `duration`    | `3000`  | `true`   |
 | `title`       |         | `true`   |
