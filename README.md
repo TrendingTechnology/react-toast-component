@@ -4,9 +4,19 @@ https://www.npmjs.com/package/react-toast-component
 
 A lightweight React toast notification component.
 
+<i>Default:</i> 
+<img src="http://sioanis.com/toast.png?" width="400px" />
+
+<i>Success:</i>
 <img src="http://sioanis.com/toast-success.png" width="400px" />
+
+<i>Error:</i>
 <img src="http://sioanis.com/toast-error.png" width="400px" />
+
+<i>Info:</i> 
 <img src="http://sioanis.com/toast-info.png" width="400px" />
+
+<i>Warning:</i>
 <img src="http://sioanis.com/toast-warning.png" width="400px" />
 
 ## Installation
