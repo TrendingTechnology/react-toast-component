@@ -1,5 +1,5 @@
 function Toast(props) {
-  return <h1>Hello, {props.name}</h1>;
+  return <div className="ReactToast">{props.children}</div>;
 }
 
 export default Toast;
