@@ -2,17 +2,16 @@ var path = require("path");
 
 module.exports = {
   mode: "production",
-  entry: "./src/index.js",
+  entry: "./src/Toast/index.jsx",
   output: {
     path: path.resolve("lib"),
     filename: "Toast.js",
-    libraryTarget: "commonjs2"
+    libraryTarget: "umd"
   },
   module: {
     rules: [
       {
-        test: /(\.js)|(\.jsx)?$/,
-        exclude: /(node_modules)/,
+        test: /\.jsx?$/,
         use: "babel-loader"
       },
       {
