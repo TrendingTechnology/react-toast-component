@@ -1,6 +1,6 @@
 {
   "name": "react-toast-component",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "React Toast Component",
   "main": "lib/Toast.js",
   "dependencies": {
