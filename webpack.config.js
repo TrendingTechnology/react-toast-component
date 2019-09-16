@@ -5,7 +5,8 @@ module.exports = {
   entry: "./src/Toast/index.jsx",
   output: {
     path: path.resolve("lib"),
-    filename: "Toast.js"
+    filename: "Toast.js",
+    libraryTarget: "umd"
   },
   module: {
     rules: [
