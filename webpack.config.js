@@ -6,6 +6,7 @@ module.exports = {
   output: {
     path: path.resolve("lib"),
     filename: "Toast.js",
+    library: "Toast",
     libraryTarget: "umd"
   },
   module: {
