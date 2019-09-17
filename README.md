@@ -82,6 +82,14 @@ import Toast from 'react-toast-component'
 </Toast>
 ```
 
+
+#### Features Coming Soon
+
+- #### Without Redux (HOC)
+- #### Swipe gestures
+- #### Drag
+- #### Multi-notifications
+
 #### With Redux (WIP)
 
 Connect toast to store.
@@ -128,10 +136,3 @@ toastActions.showToast({
   duration: '5000',
 });
 ```
-
-#### Features Coming Soon
-
-- #### Without Redux (HOC)
-- #### Swipe gestures
-- #### Drag
-- #### Multi-notifications
