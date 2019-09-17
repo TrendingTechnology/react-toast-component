@@ -1,6 +1,6 @@
 # React Toast Component
 
-https://www.npmjs.com/package/react-toast-component
+http://sioanis.com/react-toast-component/
 
 A lightweight React toast notification component.
 
