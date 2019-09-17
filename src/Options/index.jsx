@@ -25,12 +25,17 @@ function Options(props) {
     text: txt
   } = toastOptions;
 
+  const closeOptions = {
+    isOpen: false,
+    description,
+    text: txt,
+    classNames
+  };
+
   const addOptions = options => {
     if (timeout) clearTimeout(timeout);
 
-    setToast({
-      isOpen: false
-    });
+    setToast(closeOptions);
 
     timeout = setTimeout(() => {
       setToast(options);
@@ -92,13 +97,7 @@ function Options(props) {
         autoDismiss={autoDismiss}
         hasCloseBtn={hasCloseBtn}
         duration={TOAST_NO_REDUX_DURATION}
-        closeCallback={() =>
-          setToast({
-            isOpen: false,
-            description,
-            text: txt
-          })
-        }
+        closeCallback={() => setToast(closeOptions)}
         classNames={classNames}
       />
       <div className="Options--buttons">
