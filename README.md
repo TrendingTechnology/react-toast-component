@@ -9,6 +9,8 @@ A lightweight React toast notification component.
 
 ## Installation
 
+Prerequisite: <i>React version 16.8+</i>
+
 `npm i react-toast-component`
 
 ## Options
