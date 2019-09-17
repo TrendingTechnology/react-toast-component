@@ -1,7 +1,7 @@
 {
   "name": "react-toast-component",
   "version": "1.0.21",
-  "description": "React Toast Component",
+  "description": "A lightweight React toast notification component. 🍞",
   "main": "lib/Toast.js",
   "dependencies": {
     "classnames": "^2.2.6",
