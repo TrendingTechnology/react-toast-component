@@ -1,0 +1,39 @@
+.Button {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+  padding: 20px;
+  border: 2px solid #000;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  transition: 0.3s;
+  font-size: 18px;
+  font-weight: bolder;
+  letter-spacing: -1px;
+}
+.Button:last-of-type {
+  margin-bottom: 30px;
+}
+.Button:after {
+  position: absolute;
+  transition: 0.3s;
+  content: "";
+  width: 0;
+  bottom: 0;
+  height: 3px;
+  background: #000;
+  right: 0;
+  left: auto;
+}
+.Button:hover {
+  cursor: pointer;
+}
+.Button:hover:after {
+  width: 100%;
+  left: 0;
+}

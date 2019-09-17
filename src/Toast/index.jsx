@@ -3,14 +3,16 @@ import cx from "classnames";
 
 import "./style.css";
 
+let timeout = null;
+
 export default function Toast(props) {
   const {
     children,
     isOpen = false,
-    duration = 3000,
+    duration = 2000,
     title,
     description,
-    hasCloseBtn = true,
+    hasCloseBtn = false,
     autoDismiss = true,
     closeCallback = null,
     classNames = []
@@ -26,7 +28,8 @@ export default function Toast(props) {
   useEffect(() => {
     setOpen(isOpen);
     if (isOpen && autoDismiss) {
-      setTimeout(onClose, duration);
+      if (timeout) clearTimeout(timeout);
+      timeout = setTimeout(onClose, duration);
     }
   }, [isOpen, duration, autoDismiss, onClose]);
 
