@@ -2,14 +2,15 @@ p {
   margin: 0;
 }
 
-.Options--buttons {
-  padding: 0 2px;
+.Options--buttons,
+.App-header h1,
+.App-header p {
+  padding: 0 10px;
   width: 100vw;
 }
 
 @media (min-width: 480px) {
   .Options--buttons {
     column-count: 3;
-    padding: 0 10px;
   }
 }
