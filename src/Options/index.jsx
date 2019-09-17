@@ -58,7 +58,8 @@ function Options(props) {
     },
     {
       isOpen: true,
-      description: "Your action has been completed.",
+      description:
+        "Your action has been completed. This will go away in a few seconds.",
       autoDismiss: true,
       classNames: ["success"],
       text: "Success"
@@ -74,14 +75,16 @@ function Options(props) {
     },
     {
       isOpen: true,
-      description: "Some really great info is in here.",
+      description:
+        "Some really great info is in here. This will go away in a few seconds.",
       autoDismiss: true,
       classNames: ["info"],
       text: "Info"
     },
     {
       isOpen: true,
-      description: "Uh oh. There might be something wrong.",
+      description:
+        "Uh oh. There might be something wrong. This will go away in a few seconds.",
       autoDismiss: true,
       classNames: ["warning"],
       text: "Warning"
