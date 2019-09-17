@@ -24,6 +24,7 @@
 @media (min-width: 786px) {
   .ReactToast {
     top: 10px;
+    bottom: initial;
   }
 }
 
