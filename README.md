@@ -71,7 +71,7 @@ Configure your options.
 <i>warning:</i>
 <img src="http://sioanis.com/toast-warning.png" width="400px" />
 
-Add options with custom elements.
+Add toast with optional custom elements.
 ```
 <Toast
   isOpen={false}
@@ -81,53 +81,6 @@ Add options with custom elements.
 >
   <h1>Add your own custom elements in here.</h1>
 </Toast>
-```
-
-### With Redux (Coming Soon)
-
-Connect toast to store.
-
-`toastReducer.js` : Add the reducer to your redux store.
-
-```
-import toastReducer from 'react-toast-component'
-```
-
-```
-combineReducers({
-  ...yourExistingReducers,
-  ToastReducer,
-})
-```
-
-Add `ToastContainer` with optional children.
-
-```
-import ToastContainer from 'react-toast-component'
-```
-
-```
-<ToastContainer />
-```
-
-```
-<ToastContainer>
-  <h1>Your custom elements can go in here.</h1>
-</ToastContainer>
-```
-
-`toastActions.js` : Dispatch actions to update toast properties.
-
-```
-import toastActions from 'react-toast-component'
-```
-
-```
-toastActions.showToast({
-  title: 'Added',
-  description: 'Your item was added.',
-  duration: '5000',
-});
 ```
 
 #### Features Coming Soon
