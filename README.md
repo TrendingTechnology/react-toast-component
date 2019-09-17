@@ -1,6 +1,6 @@
 # React Toast Component
 
-http://sioanis.com/react-toast-component/
+<b><i>Live Demo:</i></b> http://sioanis.com/react-toast-component/
 
 A lightweight React toast notification component.
 
