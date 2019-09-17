@@ -33,18 +33,6 @@ Prerequisite: <i>React version 16.8+</i>
 
 Examples: `.jsx`
 
-<i>Success:</i>
-<img src="http://sioanis.com/toast-success.png" width="400px" />
-
-<i>Error:</i>
-<img src="http://sioanis.com/toast-error.png" width="400px" />
-
-<i>Info:</i>
-<img src="http://sioanis.com/toast-info.png" width="400px" />
-
-<i>Warning:</i>
-<img src="http://sioanis.com/toast-warning.png" width="400px" />
-
 ### Pure Component
 
 ```
@@ -70,6 +58,18 @@ Configure your options.
   classNames={["success"]}
 />
 ```
+
+<i>Success:</i>
+<img src="http://sioanis.com/toast-success.png" width="400px" />
+
+<i>Error:</i>
+<img src="http://sioanis.com/toast-error.png" width="400px" />
+
+<i>Info:</i>
+<img src="http://sioanis.com/toast-info.png" width="400px" />
+
+<i>Warning:</i>
+<img src="http://sioanis.com/toast-warning.png" width="400px" />
 
 Add options with custom elements.
 ```
