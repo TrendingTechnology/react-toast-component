@@ -4,6 +4,7 @@ p {
 
 .Options--buttons {
   padding: 0 2px;
+  width: 100vw;
 }
 
 @media (min-width: 786px) {
