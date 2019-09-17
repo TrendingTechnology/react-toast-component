@@ -19,17 +19,17 @@ Prerequisite: <i>React version 16.8+</i>
 
 ## Options
 
-| Prop             | Default | Optional | Description                                                                                 |
-| ---------------- | ------- | -------- | ------------------------------------------------------------------------------------------- |
-| `isOpen`         | `false` | `true`   | Boolean triggers the notification to open.                                                  |
-| `hasCloseBtn`    | `false` | `true`   | Boolean adds/hides close button from toast.                                                 |
-| `hasAutoDismiss` | `true`  | `true`   | Boolean auto dismisses/keeps toast in view.                                                 |
-| `closeCallback`  | `null`  | `true`   | Function triggered after toast closes.                                                      |
-| `duration`       | `2000`  | `true`   | Number duration of toast before it dismissed.                                               |
-| `title`          |         | `true`   | String for toast header.                                                                    |
-| `description`    |         | `true`   | String for toast description.                                                               |
-| `children`       |         | `true`   | Elements to add inside toast.                                                               |
-| `classNames`     | `[]`    | `true`   | Array of class names to add to the toast. (existing: `success`, `info`, `warning`, `error`) |
+| Prop             | Default | Type       | Description                                                                        |
+| ---------------- | ------- | ---------- | ---------------------------------------------------------------------------------- |
+| `isOpen`         | `false` | `boolean`  | Triggers the notification to open.                                                 |
+| `hasCloseBtn`    | `false` | `boolean`  | Adds/hides close button from toast.                                                |
+| `hasAutoDismiss` | `true`  | `boolean`  | Auto dismisses/keeps toast in view.                                                |
+| `closeCallback`  | `null`  | `function` | Triggers after toast closes.                                                       |
+| `duration`       | `2000`  | `number`   | Duration of toast before it dismissed.                                             |
+| `title`          |         | `string`   | Toast header.                                                                      |
+| `description`    |         | `string`   | Toast description.                                                                 |
+| `children`       |         | `node`     | Custom elements to add inside toast.                                               |
+| `classNames`     | `[]`    | `array`    | Class names to add to the toast. (existing: `success`, `info`, `warning`, `error`) |
 
 Examples: `.jsx`
 
