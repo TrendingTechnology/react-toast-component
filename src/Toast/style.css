@@ -3,7 +3,7 @@
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
-  width: 300px;
+  width: calc(100% - 20px);
   min-height: 80px;
   background: rgb(255, 255, 255);
   position: fixed;
@@ -21,10 +21,11 @@
   letter-spacing: -0.5px;
 }
 
-@media (min-width: 786px) {
+@media (min-width: 480px) {
   .ReactToast {
     top: 10px;
     bottom: initial;
+    width: 300px;
   }
 }
 
@@ -69,5 +70,6 @@
   background: none;
   cursor: pointer;
   font-size: 24px;
+  padding-right: 5px;
   color: rgba(0, 0, 0, 0.6);
 }
