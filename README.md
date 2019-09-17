@@ -2,7 +2,7 @@
 
 <b>Live Demo:</b> http://sioanis.com/react-toast-component/
 
-A lightweight React toast notification component. ([NPM Package](https://www.npmjs.com/package/react-toast-component))
+A lightweight React toast notification component. ([NPM](https://www.npmjs.com/package/react-toast-component))
 
 <i>Default:</i>
 <img src="http://sioanis.com/toast.png?" width="400px" />
