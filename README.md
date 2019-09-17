@@ -1,4 +1,5 @@
 # React Toast Component 
+<img src="https://img.shields.io/npm/dt/react-toast-component.svg" /> <img src="https://img.shields.io/npm/dw/react-toast-component.svg" />
 
 A lightweight React toast notification component. 
 
