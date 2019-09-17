@@ -83,7 +83,7 @@ Add options with custom elements.
 </Toast>
 ```
 
-### With Redux (WIP)
+### With Redux (Coming Soon)
 
 Connect toast to store.
 
