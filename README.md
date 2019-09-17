@@ -4,7 +4,7 @@
 A lightweight React toast notification component. 
 
 <i>Default:</i>
-<img src="http://sioanis.com/toast-default.png" width="400px" />
+<img src="http://sioanis.com/toast.png?" width="400px" />
 
 <b>Live Demo:</b> http://sioanis.com/react-toast-component/
 
