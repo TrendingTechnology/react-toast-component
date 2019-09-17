@@ -6,8 +6,7 @@ module.exports = {
   output: {
     path: path.resolve("lib"),
     filename: "Toast.js",
-    library: "Toast",
-    libraryTarget: "umd"
+    libraryTarget: "commonjs2"
   },
   module: {
     rules: [
@@ -20,5 +19,8 @@ module.exports = {
         use: ["style-loader", "css-loader"]
       }
     ]
+  },
+  externals: {
+    react: "commonjs react"
   }
 };
