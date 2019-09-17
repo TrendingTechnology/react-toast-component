@@ -1,8 +1,8 @@
-# React Toast Component
+# React Toast Component 
 
-<b><i>Live Demo:</i></b> http://sioanis.com/react-toast-component/
+<b>Live Demo:</b> http://sioanis.com/react-toast-component/ ([NPM](https://www.npmjs.com/package/react-toast-component), [Github](https://github.com/tumfoodery/react-toast-component/blob/master/README.md))
 
-A lightweight React toast notification component.
+A lightweight React toast notification component. 
 
 <i>Default:</i>
 <img src="http://sioanis.com/toast.png?" width="400px" />
