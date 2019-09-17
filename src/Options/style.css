@@ -1,0 +1,8 @@
+p {
+  margin: 0;
+}
+
+.Options--buttons {
+  column-count: 3;
+  padding: 0 10px;
+}

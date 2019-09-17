@@ -18,10 +18,10 @@ Prerequisite: <i>React version 16.8+</i>
 | Prop             | Default | Optional | Description                                                                                 |
 | ---------------- | ------- | -------- | ------------------------------------------------------------------------------------------- |
 | `isOpen`         | `false` | `true`   | Boolean triggers the notification to open.                                                  |
-| `hasCloseBtn`    | `true`  | `true`   | Boolean adds/hides close button from toast.                                                 |
+| `hasCloseBtn`    | `false` | `true`   | Boolean adds/hides close button from toast.                                                 |
 | `hasAutoDismiss` | `true`  | `true`   | Boolean auto dismisses/keeps toast in view.                                                 |
 | `closeCallback`  | `null`  | `true`   | Function triggered after toast closes.                                                      |
-| `duration`       | `3000`  | `true`   | Number duration of toast before it dismissed.                                               |
+| `duration`       | `2000`  | `true`   | Number duration of toast before it dismissed.                                               |
 | `title`          |         | `true`   | String for toast header.                                                                    |
 | `description`    |         | `true`   | String for toast description.                                                               |
 | `children`       |         | `true`   | Elements to add inside toast.                                                               |
