@@ -7,7 +7,7 @@ p {
   width: 100vw;
 }
 
-@media (min-width: 786px) {
+@media (min-width: 480px) {
   .Options--buttons {
     column-count: 3;
     padding: 0 10px;
