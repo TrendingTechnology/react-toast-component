@@ -26,9 +26,9 @@ export default function Toast(props) {
   }, [closeCallback, setOpen]);
 
   useEffect(() => {
+    if (timeout) clearTimeout(timeout);
     setOpen(isOpen);
     if (isOpen && autoDismiss) {
-      if (timeout) clearTimeout(timeout);
       timeout = setTimeout(onClose, duration);
     }
   }, [isOpen, duration, autoDismiss, onClose]);
