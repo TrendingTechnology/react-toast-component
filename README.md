@@ -45,12 +45,20 @@ Examples: `.jsx`
 <i>Warning:</i>
 <img src="http://sioanis.com/toast-warning.png" width="400px" />
 
-#### Pure Component
+### Pure Component
 
 ```
 import Toast from 'react-toast-component'
 ```
+```
+<Toast
+  isOpen
+  title="Successfully Added"
+  description="Your item was successfully added to your cart."
+/>
+```
 
+Configure your options.
 ```
 <Toast
   isOpen={isOpen}
@@ -63,14 +71,7 @@ import Toast from 'react-toast-component'
 />
 ```
 
-```
-<Toast
-  isOpen
-  title="Successfully Added"
-  description="Your item was successfully added to your cart."
-/>
-```
-
+Add options with custom elements.
 ```
 <Toast
   isOpen={false}
@@ -82,15 +83,7 @@ import Toast from 'react-toast-component'
 </Toast>
 ```
 
-
-#### Features Coming Soon
-
-- #### Without Redux (HOC)
-- #### Swipe gestures
-- #### Drag
-- #### Multi-notifications
-
-#### With Redux (WIP)
+### With Redux (WIP)
 
 Connect toast to store.
 
@@ -136,3 +129,12 @@ toastActions.showToast({
   duration: '5000',
 });
 ```
+
+#### Features Coming Soon
+
+- #### ToastContainer
+- #### Redux actions and reducer
+- #### Without Redux (HOC)
+- #### Swipe gestures
+- #### Drag
+- #### Multi-notifications
