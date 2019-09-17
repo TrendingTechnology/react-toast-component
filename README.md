@@ -59,16 +59,16 @@ Configure your options.
 />
 ```
 
-<i>Success:</i>
+<i>success:</i>
 <img src="http://sioanis.com/toast-success.png" width="400px" />
 
-<i>Error:</i>
+<i>error:</i>
 <img src="http://sioanis.com/toast-error.png" width="400px" />
 
-<i>Info:</i>
+<i>info:</i>
 <img src="http://sioanis.com/toast-info.png" width="400px" />
 
-<i>Warning:</i>
+<i>warning:</i>
 <img src="http://sioanis.com/toast-warning.png" width="400px" />
 
 Add options with custom elements.
