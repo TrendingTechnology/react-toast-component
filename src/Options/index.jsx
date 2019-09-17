@@ -12,9 +12,14 @@ let timeout = null;
 
 function Options(props) {
   // const { dispatch } = props;
-  const [toastOptions, setToast] = useState({
-    isOpen: false
-  });
+  const defaultOptions = {
+    isOpen: true,
+    description:
+      "There's some great info here. This will go away in a few seconds.",
+    text: "Default"
+  };
+
+  const [toastOptions, setToast] = useState(defaultOptions);
 
   const {
     isOpen,
@@ -43,12 +48,7 @@ function Options(props) {
   };
 
   const data = [
-    {
-      isOpen: true,
-      description: "Dunc the Lunk, thick as a castle wall.",
-      autoDismiss: true,
-      text: "Dimiss"
-    },
+    defaultOptions,
     {
       isOpen: true,
       autoDismiss: false,
@@ -65,7 +65,8 @@ function Options(props) {
     },
     {
       isOpen: true,
-      description: "Uh oh. There's something wrong.",
+      description:
+        "Uh oh. There's something wrong. To close this toast, press x.",
       classNames: ["error"],
       hasCloseBtn: true,
       autoDismiss: false,
@@ -73,14 +74,14 @@ function Options(props) {
     },
     {
       isOpen: true,
-      description: "Some info is in here.",
+      description: "Some really great info is in here.",
       autoDismiss: true,
       classNames: ["info"],
       text: "Info"
     },
     {
       isOpen: true,
-      description: "There might be something wrong.",
+      description: "Uh oh. There might be something wrong.",
       autoDismiss: true,
       classNames: ["warning"],
       text: "Warning"
