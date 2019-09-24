@@ -1,7 +1,8 @@
-# React Toast Component 
+# React Toast Component
+
 <img src="https://img.shields.io/npm/dt/react-toast-component.svg" /> <img src="https://img.shields.io/npm/dw/react-toast-component.svg" />
 
-A lightweight React toast notification component. 
+A lightweight React toast notification component.
 
 <i>Default:</i>
 <img src="http://sioanis.com/toast.png?" width="400px" />
@@ -38,6 +39,7 @@ Examples: `.jsx`
 ```
 import Toast from 'react-toast-component'
 ```
+
 ```
 <Toast
   isOpen
@@ -47,6 +49,7 @@ import Toast from 'react-toast-component'
 ```
 
 Configure your options.
+
 ```
 <Toast
   isOpen={isOpen}
@@ -72,6 +75,7 @@ Configure your options.
 <img src="http://sioanis.com/toast-warning.png" width="400px" />
 
 Add toast with optional custom elements.
+
 ```
 <Toast
   isOpen={false}
@@ -83,11 +87,11 @@ Add toast with optional custom elements.
 </Toast>
 ```
 
-#### Features Coming Soon
+#### Features Coming Soon:
 
+- #### When you turn on the settings:
+- #### Swipe and drag gestures (swipe on desktop / drag on mobile).
+- #### Multi-notifications - enable the ability to have multiple notifications pop-up at once.
 - #### ToastContainer
 - #### Redux actions and reducer
 - #### Without Redux (HOC)
-- #### Swipe gestures
-- #### Drag
-- #### Multi-notifications
