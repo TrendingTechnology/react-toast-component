@@ -5,6 +5,9 @@ import "./style.css";
 
 let timeout = null;
 
+// Swipe and drag gestures (swipe on desktop / drag on mobile).
+// Multi-notifications - enable the ability to have multiple notifications pop-up at once.
+
 export default function Toast(props) {
   const {
     children,
@@ -25,6 +28,10 @@ export default function Toast(props) {
     if (closeCallback) closeCallback();
   }, [closeCallback, setOpen]);
 
+  const onDragStart = () => {
+    // After 1 second - if dragging to the right - dismiss
+  }
+
   useEffect(() => {
     if (timeout) clearTimeout(timeout);
     setOpen(isOpen);
@@ -41,7 +48,11 @@ export default function Toast(props) {
       )}
       {children}
       {hasCloseBtn && (
-        <button className="ReactToast--close" onClick={onClose}>
+        <button
+          className="ReactToast--close"
+          onClick={onClose}
+          onDragStart={onDragStart}
+        >
           &times;
         </button>
       )}
