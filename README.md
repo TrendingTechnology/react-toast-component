@@ -89,9 +89,6 @@ Add toast with optional custom elements.
 
 #### Features Coming Soon:
 
-- #### When you turn on the settings:
-- #### Swipe and drag gestures (swipe on desktop / drag on mobile).
-- #### Multi-notifications - enable the ability to have multiple notifications pop-up at once.
 - #### ToastContainer
 - #### Redux actions and reducer
 - #### Without Redux (HOC)
