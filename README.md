@@ -4,7 +4,7 @@
 
 A lightweight React toast notification component.
 
-<i>Preview</i>: <img src="http://sioanis.com/demo.gif#" width="400px" />
+<i>Preview</i>: <img src="http://sioanis.com/demo.gif##" width="400px" />
 
 <b>Live Demo:</b> http://sioanis.com/react-toast-component/
 
