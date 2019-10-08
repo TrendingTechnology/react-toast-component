@@ -4,8 +4,7 @@
 
 A lightweight React toast notification component.
 
-<i>Default:</i>
-<img src="http://sioanis.com/toast.png?" width="400px" />
+<i>Preview</i>: <img src="http://sioanis.com/demo.gif#" width="400px" />
 
 <b>Live Demo:</b> http://sioanis.com/react-toast-component/
 
@@ -61,6 +60,8 @@ Configure your options.
   classNames={["success"]}
 />
 ```
+<i>default:</i>
+<img src="http://sioanis.com/toast.png?" width="400px" />
 
 <i>success:</i>
 <img src="http://sioanis.com/toast-success.png" width="400px" />
