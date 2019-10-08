@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import shortid from 'shortid';
 import { connect } from "react-redux";
 // import toastActions from "../toastActions";
 // import ToastContainer from "../ToastContainer";
@@ -108,13 +109,12 @@ function Options(props) {
         {data.map(options => {
           const { text } = options;
           return (
-            <>
-              <Button
-                classNames="btn striped-shadow dark"
-                onClick={() => addOptions(options)}
-                text={text}
-              />
-            </>
+            <Button
+              classNames="btn striped-shadow dark"
+              onClick={() => addOptions(options)}
+              text={text}
+              key={shortid.generate()}
+            />
           );
         })}
       </div>
