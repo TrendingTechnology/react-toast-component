@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import shortid from 'shortid';
+import shortid from "shortid";
 import { connect } from "react-redux";
 // import toastActions from "../toastActions";
 // import ToastContainer from "../ToastContainer";
@@ -143,6 +143,18 @@ function Options(props) {
         <a href="https://www.npmjs.com/package/react-toast-component">
           https://www.npmjs.com/package/react-toast-component
         </a>
+      </p>
+      <br />
+      <p>
+        <img
+          src="https://img.shields.io/npm/dt/react-toast-component.svg"
+          className="Options--badge"
+          alt=""
+        />
+        <img
+          src="https://img.shields.io/npm/dw/react-toast-component.svg"
+          alt=""
+        />
       </p>
     </header>
   );

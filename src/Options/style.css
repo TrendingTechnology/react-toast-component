@@ -10,6 +10,10 @@ p {
   text-align: center;
 }
 
+.Options--badge {
+  margin-right: 0.3em;
+}
+
 @media (min-width: 480px) {
   .Options--buttons {
     column-count: 3;
