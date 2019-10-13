@@ -6,3 +6,4 @@ public
 build
 node_modules
 .github
+react-toast-component
