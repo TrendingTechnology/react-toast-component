@@ -5,3 +5,4 @@ webpack.config.js
 public
 build
 node_modules
+.github
