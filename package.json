@@ -37,7 +37,10 @@
   },
   "keywords": [
     "react",
-    "toast"
+    "toast",
+    "notification",
+    "react-toast",
+    "react-toast-component"
   ],
   "author": "Sue Ann Ioanis",
   "license": "ISC",
