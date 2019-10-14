@@ -6,7 +6,7 @@ A lightweight React toast notification component.
 
 <i>Preview</i>: <img src="http://sioanis.com/demo-.gif" width="400px" />
 
-<b>Live Demo:</b> http://sioanis.com/react-toast-component/
+<b>Live Demo:</b> http://toast.monster
 
 (npm: [NPM](https://sue.fyi/NPM)
 github: [Github](https://github.com/tumfoodery/react-toast-component/blob/master/README.md))
@@ -60,6 +60,7 @@ Configure your options.
   classNames={["success"]}
 />
 ```
+
 <i>default:</i>
 <img src="http://sioanis.com/toast.png?" width="400px" />
 
