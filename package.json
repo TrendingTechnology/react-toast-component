@@ -19,6 +19,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.16.0",
     "css-loader": "^3.2.0",
+    "cz-conventional-changelog": "^3.0.2",
     "style-loader": "^1.0.0",
     "webpack": "4.39.1",
     "webpack-cli": "^3.3.8"
@@ -40,6 +41,8 @@
     "toast",
     "notification",
     "react-toast",
+    "react toast",
+    "react toast component",
     "react-toast-component"
   ],
   "author": "Sue Ann Ioanis",
@@ -59,5 +62,10 @@
   "bugs": {
     "url": "https://github.com/sioanis/react-toast/issues"
   },
-  "homepage": "https://github.com/sioanis/react-toast#readme"
+  "homepage": "https://github.com/sioanis/react-toast#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
