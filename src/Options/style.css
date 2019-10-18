@@ -10,12 +10,10 @@ p {
   text-align: center;
 }
 
-.Options--badge {
-  margin-right: 0.3em;
+.Options--buttons {
+  padding: 20px 10px 70px;
 }
 
-@media (min-width: 480px) {
-  .Options--buttons {
-    column-count: 3;
-  }
+.Options--badge {
+  margin-right: 0.3em;
 }

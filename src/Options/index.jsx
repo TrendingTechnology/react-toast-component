@@ -107,12 +107,11 @@ function Options(props) {
       />
       <div className="Options--buttons">
         {data.map(options => {
-          const { text } = options;
+          const { classNames } = options;
           return (
             <Button
-              classNames="btn striped-shadow dark"
+              classNames={classNames && classNames[0]}
               onClick={() => addOptions(options)}
-              text={text}
               key={shortid.generate()}
             />
           );
