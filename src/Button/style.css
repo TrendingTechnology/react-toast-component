@@ -1,40 +1,42 @@
 .Button {
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-bottom: 10px;
-  padding: 20px;
-  border: 2px solid #000;
+  height: 60px;
+  width: 60px;
+  padding: 0;
+  margin: 10px;
+  transition: 0.2s all;
   text-align: center;
-  text-transform: uppercase;
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  transition: 0.3s;
-  font-size: 18px;
-  font-weight: bolder;
-  letter-spacing: -1px;
-  background: #fff;
+  justify-content: center;
+  background-color: #e5e5e5;
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  border: none;
+  outline: none;
+  border-radius: 50%;
 }
-.Button:last-of-type {
-  margin-bottom: 30px;
+
+.Button:first-child {
+  background-color: #fff;
 }
-.Button:after {
-  position: absolute;
-  transition: 0.3s;
-  content: "";
-  width: 0;
-  bottom: 0;
-  height: 3px;
-  background: #000;
-  right: 0;
-  left: auto;
-}
+
 .Button:hover {
+  -webkit-box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }
-.Button:hover:after {
-  width: 100%;
-  left: 0;
+
+
+.Button.success {
+  background-color: #2bde3f;
+}
+
+.Button.info {
+  background-color: #1d72f3;
+}
+
+.Button.warning {
+  background-color: #ffc007;
+}
+
+.Button.error {
+  background-color: rgb(235, 77, 96);
 }
