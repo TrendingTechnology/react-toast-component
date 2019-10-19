@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useCallback } from "react";
 import cx from "classnames";
 import Draggable from "react-draggable";
+import shortid from 'shortid';
 
 import "./style.css";
 
 let timeout = null;
+let openTimeout = null;
 
 // Swipe and drag gestures (swipe on desktop / drag on mobile).
 // Multi-notifications - enable the ability to have multiple notifications pop-up at once!!!
@@ -23,6 +25,9 @@ export default function Toast(props) {
   } = props;
 
   const [isOpenState, setOpen] = useState(false);
+  const [isReset, setDraggable] = useState(false);
+
+  window.test = () => setDraggable(shortid.generate())
 
   const onClose = useCallback(() => {
     const toastElement = document.querySelectorAll(".ReactToast");
@@ -31,24 +36,31 @@ export default function Toast(props) {
     setTimeout(() => {
       if (toastElement) {
         toastElement[0].style = "";
+        setDraggable(shortid.generate());
       }
-    }, 1000);
-  }, [closeCallback, setOpen]);
+    }, duration);
+  }, [closeCallback, setOpen, duration, setDraggable]);
 
   const onDragStop = (e, d) => {
-    if (d && d.x !== 0) onClose();
+    if (d && (d.x > 10 || d.x < -10)) onClose();
   };
 
   useEffect(() => {
     if (timeout) clearTimeout(timeout);
-    setOpen(isOpen);
+    if (openTimeout) clearTimeout(openTimeout);
+    if (isOpen && (isOpen !== isOpenState)) {
+      setDraggable(shortid.generate());
+      openTimeout = setTimeout(() => setOpen(true), 50);
+    } else if (!isOpen){
+      setOpen(false);
+    }
     if (isOpen && autoDismiss) {
       timeout = setTimeout(onClose, duration);
     }
-  }, [isOpen, duration, autoDismiss, onClose]);
+  }, [isOpen, duration, setOpen, autoDismiss, onClose, isOpenState]);
 
   return (
-    <Draggable axis="x" onStop={onDragStop}>
+    <Draggable axis="x" onStop={onDragStop} key={isReset}>
       <div
         className={cx(["ReactToast", { isOpen: isOpenState }, ...classNames])}
       >
