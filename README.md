@@ -18,9 +18,9 @@ Prerequisite: <i>React version 16.8+</i>
 `npm i react-toast-component`
 
 
-### Pure Component Example: 
+### Pure Component
 
-
+Example: 
 ```
 import React, { useState } from 'react';
 import Toast from 'react-toast-component';
@@ -47,7 +47,7 @@ export default App;
 ```
 
 
-## Options
+### Options
 
 | Prop             | Default | Type       | Description                                                                        |
 | ---------------- | ------- | ---------- | ---------------------------------------------------------------------------------- |
@@ -60,6 +60,7 @@ export default App;
 | `description`    |         | `string`   | Toast description.                                                                 |
 | `children`       |         | `node`     | Custom elements to add inside toast.                                               |
 | `classNames`     | `[]`    | `array`    | Class names to add to the toast. (existing: `success`, `info`, `warning`, `error`) |
+
 
 
 Adding optional custom elements:
@@ -98,10 +99,3 @@ Adding existing class names:
 `warning`
 
 <img src="http://sioanis.com/toast-warning.png" width="400px" />
-
-
-#### Features Coming Soon:
-
-- #### ToastContainer
-- #### Redux actions and reducer
-- #### Without Redux (HOC)
