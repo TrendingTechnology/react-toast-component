@@ -18,9 +18,23 @@ Prerequisite: <i>React version 16.8+</i>
 `npm i --save react-toast-component`
 
 
+## Options:
+
+| Prop             | Default | Type       | Description                                                                        |
+| ---------------- | ------- | ---------- | ---------------------------------------------------------------------------------- |
+| `isOpen`         | `false` | `boolean`  | Triggers the notification to open.                                                 |
+| `hasCloseBtn`    | `false` | `boolean`  | Adds/hides close button from toast.                                                |
+| `hasAutoDismiss` | `true`  | `boolean`  | Auto dismisses/keeps toast in view.                                                |
+| `closeCallback`  | `null`  | `function` | Triggers after toast closes.                                                       |
+| `duration`       | `2000`  | `number`   | Duration of toast before it dismissed.                                             |
+| `title`          |         | `string`   | Toast header.                                                                      |
+| `description`    |         | `string`   | Toast description.                                                                 |
+| `children`       |         | `node`     | Custom elements to add inside toast.                                               |
+| `classNames`     | `[]`    | `array`    | Class names to add to the toast. (existing: `success`, `info`, `warning`, `error`) |
+
+
 ## Usage 
 
-Example: 
 ```
 import React, { useState } from 'react';
 import Toast from 'react-toast-component';
@@ -46,26 +60,7 @@ function App() {
 export default App;
 ```
 
-
-## Options
-
-| Prop             | Default | Type       | Description                                                                        |
-| ---------------- | ------- | ---------- | ---------------------------------------------------------------------------------- |
-| `isOpen`         | `false` | `boolean`  | Triggers the notification to open.                                                 |
-| `hasCloseBtn`    | `false` | `boolean`  | Adds/hides close button from toast.                                                |
-| `hasAutoDismiss` | `true`  | `boolean`  | Auto dismisses/keeps toast in view.                                                |
-| `closeCallback`  | `null`  | `function` | Triggers after toast closes.                                                       |
-| `duration`       | `2000`  | `number`   | Duration of toast before it dismissed.                                             |
-| `title`          |         | `string`   | Toast header.                                                                      |
-| `description`    |         | `string`   | Toast description.                                                                 |
-| `children`       |         | `node`     | Custom elements to add inside toast.                                               |
-| `classNames`     | `[]`    | `array`    | Class names to add to the toast. (existing: `success`, `info`, `warning`, `error`) |
-
-
-
-## Optional custom elements
-
-Example:
+Optional custom elements:
 ```
 <Toast
   isOpen={isOpen}
@@ -80,9 +75,7 @@ Example:
 </Toast>
 ```
 
-## Existing class names
-
-Preview:
+Existing class names:
 
 `default`
 
@@ -103,3 +96,4 @@ Preview:
 `warning`
 
 <img src="http://sioanis.com/toast-warning.png" width="400px" />
+
