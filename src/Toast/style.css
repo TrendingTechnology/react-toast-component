@@ -10,7 +10,7 @@
   bottom: 10px;
   right: -100vw;
   transition: right 1s ease-in;
-  z-index: 10000;
+  z-index: 100000;
   line-height: 1;
   padding: 10px 10px 10px 6px;
   text-align: left;
