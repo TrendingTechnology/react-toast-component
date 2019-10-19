@@ -17,23 +17,9 @@ Prerequisite: <i>React version 16.8+</i>
 
 `npm i react-toast-component`
 
-## Options
 
-| Prop             | Default | Type       | Description                                                                        |
-| ---------------- | ------- | ---------- | ---------------------------------------------------------------------------------- |
-| `isOpen`         | `false` | `boolean`  | Triggers the notification to open.                                                 |
-| `hasCloseBtn`    | `false` | `boolean`  | Adds/hides close button from toast.                                                |
-| `hasAutoDismiss` | `true`  | `boolean`  | Auto dismisses/keeps toast in view.                                                |
-| `closeCallback`  | `null`  | `function` | Triggers after toast closes.                                                       |
-| `duration`       | `2000`  | `number`   | Duration of toast before it dismissed.                                             |
-| `title`          |         | `string`   | Toast header.                                                                      |
-| `description`    |         | `string`   | Toast description.                                                                 |
-| `children`       |         | `node`     | Custom elements to add inside toast.                                               |
-| `classNames`     | `[]`    | `array`    | Class names to add to the toast. (existing: `success`, `info`, `warning`, `error`) |
+### Pure Component Example: 
 
-Examples: `.jsx`
-
-### Pure Component
 
 ```
 import React, { useState } from 'react';
@@ -60,25 +46,23 @@ function App() {
 export default App;
 ```
 
-`classNames` options - 
 
-<i>default:</i>
-<img src="http://sioanis.com/toast.png?" width="400px" />
+## Options
 
-<i>success:</i>
-<img src="http://sioanis.com/toast-success.png" width="400px" />
+| Prop             | Default | Type       | Description                                                                        |
+| ---------------- | ------- | ---------- | ---------------------------------------------------------------------------------- |
+| `isOpen`         | `false` | `boolean`  | Triggers the notification to open.                                                 |
+| `hasCloseBtn`    | `false` | `boolean`  | Adds/hides close button from toast.                                                |
+| `hasAutoDismiss` | `true`  | `boolean`  | Auto dismisses/keeps toast in view.                                                |
+| `closeCallback`  | `null`  | `function` | Triggers after toast closes.                                                       |
+| `duration`       | `2000`  | `number`   | Duration of toast before it dismissed.                                             |
+| `title`          |         | `string`   | Toast header.                                                                      |
+| `description`    |         | `string`   | Toast description.                                                                 |
+| `children`       |         | `node`     | Custom elements to add inside toast.                                               |
+| `classNames`     | `[]`    | `array`    | Class names to add to the toast. (existing: `success`, `info`, `warning`, `error`) |
 
-<i>error:</i>
-<img src="http://sioanis.com/toast-error.png" width="400px" />
 
-<i>info:</i>
-<img src="http://sioanis.com/toast-info.png" width="400px" />
-
-<i>warning:</i>
-<img src="http://sioanis.com/toast-warning.png" width="400px" />
-
-Add toast with optional custom elements.
-
+Adding optional custom elements:
 ```
 <Toast
   isOpen={isOpen}
@@ -92,6 +76,29 @@ Add toast with optional custom elements.
   <h1>Add your own custom elements in here.</h1>
 </Toast>
 ```
+
+Adding existing class names: 
+
+`default`
+
+<img src="http://sioanis.com/toast.png?" width="400px" />
+
+`success`
+
+<img src="http://sioanis.com/toast-success.png" width="400px" />
+
+`error`
+
+<img src="http://sioanis.com/toast-error.png" width="400px" />
+
+`info`
+
+<img src="http://sioanis.com/toast-info.png" width="400px" />
+
+`warning`
+
+<img src="http://sioanis.com/toast-warning.png" width="400px" />
+
 
 #### Features Coming Soon:
 
