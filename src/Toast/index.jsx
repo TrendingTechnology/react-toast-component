@@ -8,9 +8,6 @@ import "./style.css";
 let timeout = null;
 let openTimeout = null;
 
-// Swipe and drag gestures (swipe on desktop / drag on mobile).
-// Multi-notifications - enable the ability to have multiple notifications pop-up at once!!!
-
 export default function Toast(props) {
   const {
     children,
@@ -26,9 +23,6 @@ export default function Toast(props) {
 
   const [isOpenState, setOpen] = useState(false);
   const [isReset, setDraggable] = useState(false);
-
-  window.test = () => setDraggable(shortid.generate())
-
   const onClose = useCallback(() => {
     const toastElement = document.querySelectorAll(".ReactToast");
     if (closeCallback) closeCallback();
@@ -51,7 +45,7 @@ export default function Toast(props) {
     if (isOpen && (isOpen !== isOpenState)) {
       setDraggable(shortid.generate());
       openTimeout = setTimeout(() => setOpen(true), 50);
-    } else if (!isOpen){
+    } else if (!isOpen) {
       setOpen(false);
     }
     if (isOpen && autoDismiss) {
