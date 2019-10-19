@@ -36,30 +36,31 @@ Examples: `.jsx`
 ### Pure Component
 
 ```
-import Toast from 'react-toast-component'
+import React, { useState } from 'react';
+import Toast from 'react-toast-component';
+import './App.css';
+
+function App() {
+  const [isOpen, setToast] = useState(true);
+  return (
+    <div className="App">
+      <Toast
+        isOpen={isOpen}
+        autoDismiss={false}
+        closeCallback={() => setToast(false)}
+        hasCloseBtn
+        description="There's some great info here."
+        title="App Notification!!"
+        classNames={['info']}
+      />
+    </div>
+  );
+}
+
+export default App;
 ```
 
-```
-<Toast
-  isOpen
-  title="Successfully Added"
-  description="Your item was successfully added to your cart."
-/>
-```
-
-Configure your options.
-
-```
-<Toast
-  isOpen={isOpen}
-  title="App Notification 🍞"
-  description="Dunc the Lunk, thick as a castle wall. Your action has been completed."
-  autoDismiss={false}
-  duration={3000}
-  closeCallback={() => setToast(false)}
-  classNames={["success"]}
-/>
-```
+`classNames` options - 
 
 <i>default:</i>
 <img src="http://sioanis.com/toast.png?" width="400px" />
@@ -80,11 +81,14 @@ Add toast with optional custom elements.
 
 ```
 <Toast
-  isOpen={false}
-  duration={2000}
-  title="Successfully Deleted"
-  description="Your item was successfully deleted from your cart."
->
+  isOpen={isOpen}
+  autoDismiss={false}
+  closeCallback={() => setToast(false)}
+  hasCloseBtn
+  description="There's some great info here."
+  title="App Notification!!"
+  classNames={['info']}
+/>
   <h1>Add your own custom elements in here.</h1>
 </Toast>
 ```
