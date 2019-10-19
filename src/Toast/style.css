@@ -3,12 +3,12 @@
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
-  width: calc(100% - 20px);
+  width: calc(100vw - 20px);
   min-height: 80px;
   background: rgb(255, 255, 255);
   position: fixed;
   bottom: 10px;
-  right: -100%;
+  right: -100vw;
   transition: right 1s ease-in;
   z-index: 10000;
   line-height: 1;
@@ -19,6 +19,11 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border-radius: 5px;
   letter-spacing: -0.5px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ReactToast:hover {
+  cursor: default;
 }
 
 @media (min-width: 480px) {
