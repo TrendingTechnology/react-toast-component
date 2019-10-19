@@ -15,10 +15,10 @@ github: [Github](https://github.com/tumfoodery/react-toast-component/blob/master
 
 Prerequisite: <i>React version 16.8+</i>
 
-`npm i react-toast-component`
+`npm i --save react-toast-component`
 
 
-### Pure Component
+## Usage 
 
 Example: 
 ```
@@ -47,7 +47,7 @@ export default App;
 ```
 
 
-### Options
+## Options
 
 | Prop             | Default | Type       | Description                                                                        |
 | ---------------- | ------- | ---------- | ---------------------------------------------------------------------------------- |
@@ -63,7 +63,9 @@ export default App;
 
 
 
-Adding optional custom elements:
+## Optional custom elements
+
+Example:
 ```
 <Toast
   isOpen={isOpen}
@@ -78,7 +80,9 @@ Adding optional custom elements:
 </Toast>
 ```
 
-Adding existing class names: 
+## Existing class names
+
+Preview:
 
 `default`
 
