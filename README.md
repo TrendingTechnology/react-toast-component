@@ -26,7 +26,7 @@ Prerequisite: <i>React version 16.8+</i>
 | `hasCloseBtn`    | `false` | `boolean`  | Adds/hides close button from toast.                                                |
 | `hasAutoDismiss` | `true`  | `boolean`  | Auto dismisses/keeps toast in view.                                                |
 | `closeCallback`  | `null`  | `function` | Triggers after toast closes.                                                       |
-| `duration`       | `2000`  | `number`   | Duration of toast before it dismissed.                                             |
+| `duration`       | `2000`  | `number`   | Duration of toast before it's dismissed.                                             |
 | `title`          |         | `string`   | Toast header.                                                                      |
 | `description`    |         | `string`   | Toast description.                                                                 |
 | `children`       |         | `node`     | Custom elements to add inside toast.                                               |
