@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/npm/dt/react-toast-component.svg" /> <img src="https://img.shields.io/npm/dw/react-toast-component.svg" /> [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-A lightweight React toast notification component.
+A lightweight react toast notification component.
 
 <img src="http://sioanis.com/demo-.gif" width="400px" />
 
