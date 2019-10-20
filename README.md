@@ -18,7 +18,7 @@ Prerequisite: <i>React version 16.8+</i>
 `npm i --save react-toast-component`
 
 
-## Options:
+## Options
 
 | Prop             | Default | Type       | Description                                                                        |
 | ---------------- | ------- | ---------- | ---------------------------------------------------------------------------------- |
@@ -75,7 +75,7 @@ Optional custom elements:
 </Toast>
 ```
 
-Existing class names:
+Optional built-in class names:
 
 `success`
 
@@ -92,4 +92,8 @@ Existing class names:
 `warning`
 
 <img src="http://sioanis.com/toast-warning.png" width="400px" />
+
+Default:
+
+<img src="http://sioanis.com/toast.png" width="400px" />
 
