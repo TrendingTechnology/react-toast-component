@@ -77,10 +77,6 @@ Optional custom elements:
 
 Existing class names:
 
-`default`
-
-<img src="http://sioanis.com/toast.png?" width="400px" />
-
 `success`
 
 <img src="http://sioanis.com/toast-success.png" width="400px" />
