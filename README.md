@@ -74,6 +74,9 @@ Optional custom elements:
   <h1>Add your own custom elements in here.</h1>
 </Toast>
 ```
+Default:
+
+<img src="http://sioanis.com/toast.png" width="400px" />
 
 Optional built-in class names:
 
@@ -92,8 +95,4 @@ Optional built-in class names:
 `warning`
 
 <img src="http://sioanis.com/toast-warning.png" width="400px" />
-
-Default:
-
-<img src="http://sioanis.com/toast.png" width="400px" />
 
