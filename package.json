@@ -46,6 +46,10 @@
     "react-toast-component"
   ],
   "author": "Sue Ann Ioanis",
+  "contributors": [
+    "Sue Ann Ioanis <sueann.ioanis@gmail.com>",
+    "Michael Yuen <michaelclaytonyuen@gmail.com>"
+  ],
   "license": "ISC",
   "browserslist": {
     "production": [
