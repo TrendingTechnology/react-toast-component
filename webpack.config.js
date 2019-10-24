@@ -4,9 +4,11 @@ module.exports = {
   mode: "production",
   entry: "./src/Toast/index.jsx",
   output: {
-    path: path.resolve("lib"),
+    path: path.resolve(__dirname, "lib"),
     filename: "Toast.js",
-    libraryTarget: "commonjs2"
+    library: "Toast",
+    libraryExport: "default",
+    libraryTarget: "umd"
   },
   module: {
     rules: [
@@ -21,6 +23,11 @@ module.exports = {
     ]
   },
   externals: {
-    react: "commonjs react"
+    react: {
+      root: "React",
+      commonjs: "react",
+      commonjs2: "react",
+      amd: "react"
+    }
   }
 };
