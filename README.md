@@ -73,26 +73,3 @@ Optional custom elements:
 />
   <h1>Add your own custom elements in here.</h1>
 </Toast>
-```
-Default:
-
-<img src="http://sioanis.com/toast.png" width="400px" />
-
-Optional built-in class names:
-
-`success`
-
-<img src="http://sioanis.com/toast-success.png" width="400px" />
-
-`error`
-
-<img src="http://sioanis.com/toast-error.png" width="400px" />
-
-`info`
-
-<img src="http://sioanis.com/toast-info.png" width="400px" />
-
-`warning`
-
-<img src="http://sioanis.com/toast-warning.png" width="400px" />
-
