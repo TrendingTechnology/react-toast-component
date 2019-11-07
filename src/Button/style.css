@@ -12,6 +12,8 @@
   border: none;
   outline: none;
   border-radius: 50%;
+  color: transparent;
+  font-size: 1.2rem;
 }
 
 .Button:first-child {
@@ -22,6 +24,7 @@
   -webkit-box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.4);
   cursor: pointer;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 

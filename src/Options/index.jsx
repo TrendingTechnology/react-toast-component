@@ -1,18 +1,16 @@
 import React, { useState } from "react";
-import shortid from "shortid";
 import { connect } from "react-redux";
-// import toastActions from "../toastActions";
-// import ToastContainer from "../ToastContainer";
+import { FaGithub, FaNpm } from 'react-icons/fa';
 import Toast from "../Toast";
 import Button from "../Button";
 
+import OPTIONS from "./options";
 import "./style.css";
 
 const TOAST_NO_REDUX_DURATION = 5000;
 let timeout = null;
 
 function Options(props) {
-  // const { dispatch } = props;
   const defaultOptions = {
     isOpen: true,
     description:
@@ -48,53 +46,17 @@ function Options(props) {
     }, 500);
   };
 
-  const data = [
-    defaultOptions,
-    {
-      isOpen: true,
-      autoDismiss: false,
-      description: "To close this toast, press x.",
-      hasCloseBtn: true,
-      text: "No Dimiss"
-    },
-    {
-      isOpen: true,
-      description:
-        "Your action has been completed. This will go away in a few seconds.",
-      autoDismiss: true,
-      classNames: ["success"],
-      text: "Success"
-    },
-    {
-      isOpen: true,
-      description:
-        "Uh oh. There's something wrong. To close this toast, press x.",
-      classNames: ["error"],
-      hasCloseBtn: true,
-      autoDismiss: false,
-      text: "Error"
-    },
-    {
-      isOpen: true,
-      description:
-        "Some really great info is in here. This will go away in a few seconds.",
-      autoDismiss: true,
-      classNames: ["info"],
-      text: "Info"
-    },
-    {
-      isOpen: true,
-      description:
-        "Uh oh. There might be something wrong. This will go away in a few seconds.",
-      autoDismiss: true,
-      classNames: ["warning"],
-      text: "Warning"
-    }
-  ];
-
   return (
-    <header className="App-header">
-      <h1>React Toast Pure Component</h1>
+    <div className="Options">
+      <a className="Options--header" href="https://www.npmjs.com/package/react-toast-component"><h1>React Toast Pure Component</h1></a>
+      <p className="Options--icons">
+        <a href="https://github.com/tumfoodery/react-toast-component">
+          <FaGithub />
+        </a>
+        <a href="https://www.npmjs.com/package/react-toast-component">
+          <FaNpm />
+        </a>
+      </p>
       <Toast
         isOpen={isOpen}
         title={`${txt ? ` ${txt}` : ""} Notification 🍞`}
@@ -106,44 +68,18 @@ function Options(props) {
         classNames={classNames}
       />
       <div className="Options--buttons">
-        {data.map(options => {
+        {OPTIONS(defaultOptions).map(options => {
           const { classNames } = options;
+          const className = classNames && classNames[0];
           return (
             <Button
-              classNames={classNames && classNames[0]}
+              classNames={className}
               onClick={() => addOptions(options)}
-              key={shortid.generate()}
+              key={className}
             />
           );
         })}
       </div>
-      {/* <ToastContainer /> */}
-      {/* <button
-        onClick={() =>
-          dispatch(
-            toastActions.addToast({
-              title: "Added",
-              description: "Your item was added.",
-              duration: "5000"
-            })
-          )
-        }
-      >
-        ToastContainer
-      </button> */}
-      <p>
-        <b>Github:</b>{" "}
-        <a href="https://github.com/tumfoodery/react-toast-component">
-          https://github.com/tumfoodery/react-toast-component
-        </a>
-      </p>
-      <p>
-        <b>NPM:</b>{" "}
-        <a href="https://www.npmjs.com/package/react-toast-component">
-          https://www.npmjs.com/package/react-toast-component
-        </a>
-      </p>
-      <br />
       <p>
         <img
           src="https://img.shields.io/npm/dt/react-toast-component.svg"
@@ -155,7 +91,7 @@ function Options(props) {
           alt=""
         />
       </p>
-    </header>
+    </div>
   );
 }
 
