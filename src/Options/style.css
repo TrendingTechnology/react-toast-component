@@ -1,17 +1,27 @@
-p {
-  margin: 0;
-}
-
-.Options--buttons,
-.App-header h1,
-.App-header p {
-  padding: 0 10px;
+.Options h1, .Options p, .Options--buttons {
+  letter-spacing: initial;
   width: 100vw;
   text-align: center;
 }
 
 .Options--buttons {
-  padding: 20px 10px 70px;
+  letter-spacing: initial;
+  padding: 0 10px;
+  width: 100vw;
+  text-align: center;
+}
+
+.Options--header {
+  color: #000;
+}
+
+.Options--icons a {
+  color: #000;
+  padding: 0 5px;
+}
+
+.Options--buttons {
+  padding: 20px 10px 40px;
 }
 
 .Options--badge {

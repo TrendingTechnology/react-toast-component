@@ -10,7 +10,7 @@
   outline: none;
 }
 
-.App-header {
+body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,10 +19,19 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Indie Flower", cursive;
   letter-spacing: -1px;
 }
 
-.App-header h1 {
-  font-style: italic;
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Pacifico", serif;
+  line-height: 25px;
 }
