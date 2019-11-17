@@ -6,7 +6,7 @@ A lightweight react toast notification component.
 
 <img src="http://sioanis.com/demo-.gif" width="400px" />
 
-<b>Live Demo:</b> http://toast.monster
+<b>Live Demo:</b> https://toast.monster
 
 (npm: [NPM](https://sue.fyi/NPM)
 github: [Github](https://github.com/tumfoodery/react-toast-component/blob/master/README.md))
