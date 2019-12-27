@@ -7,3 +7,4 @@ build
 examples
 node_modules
 .github
+package-lock.json
