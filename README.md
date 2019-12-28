@@ -1,15 +1,10 @@
 # React Toast Component
 
-<img src="https://img.shields.io/npm/dt/react-toast-component.svg" />
-
 A lightweight react toast notification component.
 
 <img src="https://sue.fyi/toast.gif" width="400px" />
 
-<b>Live Demo:</b> https://toast.monster
-
-(npm: [NPM](https://www.npmjs.com/package/react-toast-component)
-github: [Github](https://github.com/tumfoodery/react-toast-component/blob/master/README.md))
+<b>Live Demo:</b> https://toast.monster <img src="https://img.shields.io/npm/dt/react-toast-component.svg" />
 
 ## Installation
 
