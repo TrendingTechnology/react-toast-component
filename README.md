@@ -2,7 +2,7 @@
 
 A lightweight react toast notification component.
 
-<img src="https://sue.fyi/images/toast.png" />
+<img src="https://sue.fyi/images/toast.png" width="400px" />
 
 <b>Live Demo:</b> https://toast.monster
 
