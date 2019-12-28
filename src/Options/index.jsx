@@ -86,6 +86,10 @@ function Options(props) {
           className="Options--badge"
           alt=""
         />
+        <img
+          src="https://img.shields.io/npm/dw/react-toast-component.svg"
+          alt=""
+        />
       </p>
     </div>
   );
