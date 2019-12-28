@@ -4,9 +4,9 @@ A lightweight react toast notification component.
 
 <img src="https://sue.fyi/toast.gif" width="400px" />
 
-<b>Live Demo:</b> https://toast.monster <img src="https://img.shields.io/npm/dt/react-toast-component.svg" />
+<b>Live Demo:</b> https://toast.monster
 
-## Installation
+## Installation <img src="https://img.shields.io/npm/dt/react-toast-component.svg" />
 
 Prerequisite: <i>React version 16.8+</i>
 
