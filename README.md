@@ -2,7 +2,7 @@
 
 A lightweight react toast notification component.
 
-<img src="https://sue.fyi/toast.gif" width="400px" />
+<img src="https://sue.fyi/images/toast.png" />
 
 <b>Live Demo:</b> https://toast.monster
 
@@ -10,7 +10,7 @@ A lightweight react toast notification component.
 github: [Github](https://github.com/tumfoodery/react-toast-component/blob/master/README.md))
 
 ## Installation
-<img src="https://img.shields.io/npm/dt/react-toast-component.svg" /> <img src="https://img.shields.io/npm/dw/react-toast-component.svg" /> [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+<img src="https://img.shields.io/npm/dt/react-toast-component.svg" /> <img src="https://img.shields.io/npm/dw/react-toast-component.svg" />
 
 Prerequisite: <i>React version 16.8+</i>
 
