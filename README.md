@@ -4,7 +4,7 @@
 
 A lightweight react toast notification component.
 
-<img src="https://sue.fyi/images/t.gif" width="400px" />
+<img src="https://sue.fyi/toast.gif" width="400px" />
 
 <b>Live Demo:</b> https://toast.monster
 
