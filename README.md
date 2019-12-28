@@ -1,6 +1,6 @@
 # React Toast Component
 
-<img src="https://img.shields.io/npm/dt/react-toast-component.svg" /> [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+<img src="https://img.shields.io/npm/dt/react-toast-component.svg" />
 
 A lightweight react toast notification component.
 
