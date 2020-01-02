@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import Draggable from "react-draggable";
+// import Draggable from "react-draggable";
 
 import "./style.css";
 
@@ -20,7 +20,7 @@ export default function Toast(props) {
   } = props;
 
   const [isOpenState, setOpen] = useState(false);
-  const [isReset, setDraggable] = useState(false);
+  // const [isReset, setDraggable] = useState(false);
   const onClose = useCallback(() => {
     const toastElement = document.querySelectorAll(".ReactToast");
     if (closeCallback) closeCallback();
@@ -52,7 +52,7 @@ export default function Toast(props) {
   }, [isOpen, duration, setOpen, autoDismiss, onClose, isOpenState]);
 
   return (
-    <Draggable axis="x" onStop={onDragStop} key={isReset}>
+    <Draggable axis="x" onStop={onDragStop} key={isReset}></Draggable>
       <div
         className={`ReactToast${
           isOpenState ? ' isOpen' : ''}${
@@ -71,6 +71,5 @@ export default function Toast(props) {
           </button>
         )}
       </div>
-    </Draggable>
   );
 }
