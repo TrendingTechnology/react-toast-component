@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import cx from "classnames";
 import Draggable from "react-draggable";
-import shortid from 'shortid';
 
 import "./style.css";
 
@@ -30,7 +28,7 @@ export default function Toast(props) {
     setTimeout(() => {
       if (toastElement) {
         toastElement[0].style = "";
-        setDraggable(shortid.generate());
+        setDraggable('close');
       }
     }, duration);
   }, [closeCallback, setOpen, duration, setDraggable]);
@@ -43,7 +41,7 @@ export default function Toast(props) {
     if (timeout) clearTimeout(timeout);
     if (openTimeout) clearTimeout(openTimeout);
     if (isOpen && (isOpen !== isOpenState)) {
-      setDraggable(shortid.generate());
+      setDraggable('open');
       openTimeout = setTimeout(() => setOpen(true), 50);
     } else if (!isOpen) {
       setOpen(false);
@@ -56,7 +54,11 @@ export default function Toast(props) {
   return (
     <Draggable axis="x" onStop={onDragStop} key={isReset}>
       <div
-        className={cx(["ReactToast", { isOpen: isOpenState }, ...classNames])}
+        className={`ReactToast${
+          isOpenState ? ' isOpen' : ''}${
+            classNames.length ? classNames.join(' ').toString() : ''
+          }`
+        }
       >
         {title && <h2 className="ReactToast--title">{title}</h2>}
         {description && (
