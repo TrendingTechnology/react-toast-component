@@ -45,12 +45,13 @@ function App() {
     <div className="App">
       <Toast
         isOpen={isOpen}
-        autoDismiss={false}
-        closeCallback={() => setToast(false)}
+        hasAutoDismiss={false}
         hasCloseBtn
+        closeCallback={() => setToast(false)}
         description="There's some great info here."
         title="App Notification!!"
-        classNames={['info']} // options: 'success', 'info', 'warning', 'error'
+        duration={5000}
+        classNames={['info']}  // 'success', 'info', 'warning', 'error'
       />
     </div>
   );
@@ -68,7 +69,7 @@ Optional custom elements:
   hasCloseBtn
   description="There's some great info here."
   title="App Notification!!"
-  classNames={['info']}  // options: 'success', 'info', 'warning', 'error'
+  classNames={['info']}  // 'success', 'info', 'warning', 'error'
 />
   <h1>Add your own custom elements in here.</h1>
 </Toast>
