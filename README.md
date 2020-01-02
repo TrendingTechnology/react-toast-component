@@ -29,7 +29,7 @@ Prerequisite: <i>React version 16.8+</i>
 | `title`          |         | `string`   | Toast header.                                                                      |
 | `description`    |         | `string`   | Toast description.                                                                 |
 | `children`       |         | `node`     | Custom elements to add inside toast.                                               |
-| `classNames`     | `[]`    | `array`    | Class names to add to the toast. (existing: `success`, `info`, `warning`, `error`) |
+| `classNames`     | `[]`    | `array`    | Class names to add to the toast. |
 
 
 ## Usage 
@@ -45,12 +45,13 @@ function App() {
     <div className="App">
       <Toast
         isOpen={isOpen}
-        autoDismiss={false}
-        closeCallback={() => setToast(false)}
+        hasAutoDismiss={false}
         hasCloseBtn
+        closeCallback={() => setToast(false)}
         description="There's some great info here."
         title="App Notification!!"
-        classNames={['info']}
+        duration={5000}
+        classNames={['info']}  // 'success', 'info', 'warning', 'error'
       />
     </div>
   );
@@ -68,7 +69,7 @@ Optional custom elements:
   hasCloseBtn
   description="There's some great info here."
   title="App Notification!!"
-  classNames={['info']}
+  classNames={['info']}  // 'success', 'info', 'warning', 'error'
 />
   <h1>Add your own custom elements in here.</h1>
 </Toast>
