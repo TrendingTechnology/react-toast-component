@@ -64,12 +64,11 @@ Optional custom elements:
 ```
 <Toast
   isOpen={isOpen}
-  autoDismiss={false}
   closeCallback={() => setToast(false)}
   hasCloseBtn
   description="There's some great info here."
   title="App Notification!!"
-  classNames={['info']}  // 'success', 'info', 'warning', 'error'
-/>
+>
   <h1>Add your own custom elements in here.</h1>
 </Toast>
+```
