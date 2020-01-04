@@ -49,13 +49,16 @@ function Options(props) {
   return (
     <div className="Options">
       <a className="Options--header" href="https://www.npmjs.com/package/react-toast-component"><h1>React Toast Pure Component</h1></a>
-      <p className="Options--icons">
-        <a href="https://github.com/tumfoodery/react-toast-component">
-          <FaGithub />
-        </a>
-        <a href="https://www.npmjs.com/package/react-toast-component">
-          <FaNpm />
-        </a>
+      <p>
+        <img
+          src="https://img.shields.io/npm/dt/react-toast-component.svg"
+          className="Options--badge"
+          alt=""
+        />
+        <img
+          src="https://img.shields.io/npm/dw/react-toast-component.svg"
+          alt=""
+        />
       </p>
       <Toast
         isOpen={isOpen}
@@ -80,16 +83,14 @@ function Options(props) {
           );
         })}
       </div>
-      <p>
-        <img
-          src="https://img.shields.io/npm/dt/react-toast-component.svg"
-          className="Options--badge"
-          alt=""
-        />
-        <img
-          src="https://img.shields.io/npm/dw/react-toast-component.svg"
-          alt=""
-        />
+      <img className="Options--img" src="https://cdn.dribbble.com/users/2582040/screenshots/7667697/media/add2e422e9dfbd9fcd95946e91b8093c.png" alt="" />
+      <p className="Options--icons">
+        <a href="https://github.com/tumfoodery/react-toast-component">
+          <FaGithub />
+        </a>
+        <a href="https://www.npmjs.com/package/react-toast-component">
+          <FaNpm />
+        </a>
       </p>
     </div>
   );

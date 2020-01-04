@@ -1,7 +1,21 @@
+.Options {
+  text-align: center;
+}
+
+.Options h1 {
+  font-size: 42px;
+  margin-bottom: 42px;
+}
+
 .Options h1, .Options p, .Options--buttons {
   letter-spacing: initial;
   width: 100vw;
-  text-align: center;
+}
+
+.Options--img {
+  width: 100vw;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 .Options--buttons {
@@ -20,8 +34,13 @@
   padding: 0 5px;
 }
 
+.Options--icons svg {
+  width: 22px;
+  height: 22px;
+}
+
 .Options--buttons {
-  padding: 20px 10px 40px;
+  padding: 20px 10px 12px;
 }
 
 .Options--badge {

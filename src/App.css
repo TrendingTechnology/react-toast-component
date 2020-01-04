@@ -21,6 +21,8 @@ body {
   position: relative;
   font-family: "Indie Flower", cursive;
   letter-spacing: -1px;
+  background: rgb(80, 204, 176);
+  margin: 0;
 }
 
 p {
