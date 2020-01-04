@@ -46,3 +46,8 @@
 .Options--badge {
   margin-right: 0.3em;
 }
+
+.Options--attr {
+  font-size: 12px;
+  margin-bottom: 14px;
+}
