@@ -17,7 +17,12 @@
   max-width: 650px;
   margin: 0 auto;
   max-height: 487.5px;
-  height: 75vh;
+}
+
+@media (min-width: 650px) {
+  .Options--img {
+    max-height: 75vh;
+  }
 }
 
 .Options--buttons {
