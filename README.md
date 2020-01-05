@@ -14,7 +14,7 @@ github: [Github](https://github.com/tumfoodery/react-toast-component/blob/master
 
 Prerequisite: <i>React version 16.8+</i>
 
-`npm i --save react-toast-component`
+`npm i react-toast-component`
 
 
 ## Options
