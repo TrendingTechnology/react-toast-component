@@ -57,5 +57,8 @@
 .Options--attr {
   font-size: 9px;
   margin-bottom: 14px;
+}
+
+.Options--attr a {
   color: antiquewhite;
 }
