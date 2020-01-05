@@ -67,7 +67,7 @@ function Options(props) {
           description="${description}"
           title="${TITLE}"
           duration={${TOAST_NO_REDUX_DURATION}}
-          classNames={${classNames ? `'${classNames}'` : []}}
+          classNames={${classNames ? `'${classNames}'` : '[]'}}
         ${customChild ? '>        \n          <p>To close, press x. <span role="img" aria-label="child">👶</span></p>\n        </Toast>' : '/>'}
       </div>
     );
