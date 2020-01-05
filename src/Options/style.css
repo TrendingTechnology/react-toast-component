@@ -5,6 +5,7 @@
 .prism-code {
   text-align: left;
   min-height: 417px;
+  overflow-x: hidden;
 }
 .prism-code .token-line {
   max-width: 100vw;
