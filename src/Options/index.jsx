@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
-import Highlight, { defaultProps } from "prism-react-renderer";
-import { FaGithub, FaNpm } from 'react-icons/fa';
+import { FaGithub, FaNpm, FaCheck, FaRegCopy } from 'react-icons/fa';
 import Toast from "../Toast";
 import Button from "../Button";
 
@@ -16,7 +15,8 @@ function Options(props) {
     isOpen: true,
     description:
       "There's some great info here. This will go away in a few seconds.",
-    text: "Default"
+    text: "Default",
+    copied: false,
   };
 
   const [toastOptions, setToast] = useState(defaultOptions);
@@ -28,6 +28,7 @@ function Options(props) {
     description,
     classNames,
     customChild,
+    copied,
     text: txt
   } = toastOptions;
 
@@ -50,32 +51,6 @@ function Options(props) {
     }, 500);
   };
 
-  const exampleCode = `
-  import React, { useState } from 'react';
-  import Toast from 'react-toast-component';
-  import './App.css';
-  
-  function App() {
-    const [isOpen, setToast] = useState(true);
-    return (
-      <div className="App">
-        <Toast
-          isOpen={isOpen}
-          hasAutoDismiss={${autoDismiss ? 'true' : 'false'}}
-          hasCloseBtn={${hasCloseBtn ? 'true' : 'false'}}
-          closeCallback={() => setToast(false)}
-          description="${description}"
-          title="${TITLE}"
-          duration={${TOAST_NO_REDUX_DURATION}}
-          classNames={${classNames ? `['${classNames}']` : '[]'}}
-        ${customChild ? '>        \n          <p>To close, press x. <span role="img" aria-label="child">👶</span></p>\n        </Toast>' : '/>'}
-      </div>
-    );
-  }
-  
-  export default App;
-  `;
-
   return (
     <div className="Options">
       <a className="Options--header" href="https://www.npmjs.com/package/react-toast-component"><h1>React Toast Pure Component</h1></a>
@@ -90,20 +65,6 @@ function Options(props) {
           alt=""
         />
       </p>
-      <code>npm i react-toast-component</code>
-      <Highlight {...defaultProps} code={exampleCode} language="jsx">
-        {({ className, style, tokens, getLineProps, getTokenProps }) => (
-          <pre className={className} style={style}>
-            {tokens.map((line, i) => (
-              <div {...getLineProps({ line, key: i })}>
-                {line.map((token, key) => (
-                  <span {...getTokenProps({ token, key })} />
-                ))}
-              </div>
-            ))}
-          </pre>
-        )}
-      </Highlight>
       <Toast
         isOpen={isOpen}
         title={TITLE}
@@ -140,6 +101,19 @@ function Options(props) {
           <FaNpm />
         </a>
       </p>
+      <code
+        onClick={() => {
+          document.querySelector('.Options--code').select()
+          document.execCommand('copy');
+          setToast({...toastOptions, copied: true})
+        }}
+      >
+        <input className="Options--code"
+          value="npm i react-toast-component"
+
+        />
+        {copied ? <FaCheck /> : <FaRegCopy />}
+      </code>
     </div>
   );
 }

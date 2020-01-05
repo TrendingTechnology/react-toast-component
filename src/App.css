@@ -40,6 +40,12 @@ h1 {
 }
 
 code {
-  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
-  font-size: 13px;
+  display: block;
+  margin-top: 20px;
+}
+
+.gist {
+  margin-top: 28px;
+  width: 80vw;
+  max-width: 600px;
 }
