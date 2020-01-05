@@ -14,7 +14,7 @@ github: [Github](https://github.com/tumfoodery/react-toast-component/blob/master
 
 Prerequisite: <i>React version 16.8+</i>
 
-`npm i --save react-toast-component`
+`npm i react-toast-component`
 
 
 ## Options
@@ -64,12 +64,11 @@ Optional custom elements:
 ```
 <Toast
   isOpen={isOpen}
-  autoDismiss={false}
   closeCallback={() => setToast(false)}
   hasCloseBtn
   description="There's some great info here."
   title="App Notification!!"
-  classNames={['info']}  // 'success', 'info', 'warning', 'error'
-/>
+>
   <h1>Add your own custom elements in here.</h1>
 </Toast>
+```
