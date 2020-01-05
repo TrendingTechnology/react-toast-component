@@ -83,7 +83,7 @@ function Options(props) {
           );
         })}
       </div>
-      <img className="Options--img" src="https://cdn.dribbble.com/users/2582040/screenshots/7667697/media/add2e422e9dfbd9fcd95946e91b8093c.png" alt="" />
+      <img className="Options--img" src="toast.png" alt="" />
       <p className="Options--attr">credit: toaster &amp; friends
           by <a href="https://dribbble.com/shots/7667697-toaster-friends">KOIOS design</a></p>
       <p className="Options--icons">
