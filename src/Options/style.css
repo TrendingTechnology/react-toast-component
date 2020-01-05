@@ -16,6 +16,8 @@
   width: 100vw;
   max-width: 650px;
   margin: 0 auto;
+  max-height: 487.5px;
+  height: 75vh;
 }
 
 .Options--buttons {
