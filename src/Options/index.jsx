@@ -60,14 +60,14 @@ function Options(props) {
     return (
       <div className="App">
         <Toast
-          isOpen={${isOpen ? 'true' : 'false'}}
+          isOpen={isOpen}
           hasAutoDismiss={${autoDismiss ? 'true' : 'false'}}
           hasCloseBtn={${hasCloseBtn ? 'true' : 'false'}}
           closeCallback={() => setToast(false)}
           description="${description}"
           title="${TITLE}"
           duration={${TOAST_NO_REDUX_DURATION}}
-          classNames={${classNames ? `'${classNames}'` : null}}
+          classNames={${classNames ? `'${classNames}'` : []}}
         ${customChild ? '>        \n          <p>To close, press x. <span role="img" aria-label="child">👶</span></p>\n        </Toast>' : '/>'}
       </div>
     );
