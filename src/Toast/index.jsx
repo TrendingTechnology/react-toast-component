@@ -47,7 +47,7 @@ export default function Toast(props) {
     <div
       className={`ReactToast${
         isOpenState ? ' isOpen' : ''}${
-          classNames.length ? ` ${classNames.join(' ').toString()}` : ''
+          classNames && classNames.length ? ` ${classNames.join(' ').toString()}` : ''
         }`
       }
     >
