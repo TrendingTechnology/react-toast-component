@@ -11,7 +11,7 @@
   right: -100vw;
   transition: right 1s ease-in;
   z-index: 100000;
-  line-height: 1;
+  line-height: 1.25;
   padding: 10px 10px 10px 6px;
   text-align: left;
   color: #333;
@@ -63,7 +63,7 @@
   text-overflow: ellipsis;
 }
 
-.ReactToast--description {
+.ReactToast--description, .ReactToast p {
   font-size: 14px;
 }
 

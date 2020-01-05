@@ -13,7 +13,7 @@ export default function Toast(props) {
     title,
     description,
     hasCloseBtn = false,
-    autoDismiss = true,
+    hasAutoDismiss = true,
     closeCallback = null,
     classNames = []
   } = props;
@@ -38,10 +38,10 @@ export default function Toast(props) {
     } else if (!isOpen) {
       setOpen(false);
     }
-    if (isOpen && autoDismiss) {
+    if (isOpen && hasAutoDismiss) {
       timeout = setTimeout(onClose, duration);
     }
-  }, [isOpen, duration, setOpen, autoDismiss, onClose, isOpenState]);
+  }, [isOpen, duration, setOpen, hasAutoDismiss, onClose, isOpenState]);
 
   return (
     <div

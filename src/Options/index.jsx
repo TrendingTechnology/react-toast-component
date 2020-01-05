@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
+import Highlight, { defaultProps } from "prism-react-renderer";
 import { FaGithub, FaNpm } from 'react-icons/fa';
 import Toast from "../Toast";
 import Button from "../Button";
@@ -26,6 +27,7 @@ function Options(props) {
     hasCloseBtn,
     description,
     classNames,
+    customChild,
     text: txt
   } = toastOptions;
 
@@ -36,6 +38,8 @@ function Options(props) {
     classNames
   };
 
+  const TITLE = `${txt ? `${txt}` : ""} Notification 🍞`;
+
   const addOptions = options => {
     if (timeout) clearTimeout(timeout);
 
@@ -45,6 +49,32 @@ function Options(props) {
       setToast(options);
     }, 500);
   };
+
+  const exampleCode = `
+  import React, { useState } from 'react';
+  import Toast from 'react-toast-component';
+  import './App.css';
+  
+  function App() {
+    const [isOpen, setToast] = useState(true);
+    return (
+      <div className="App">
+        <Toast
+          isOpen={${isOpen ? 'true' : 'false'}}
+          hasAutoDismiss={${autoDismiss ? 'true' : 'false'}}
+          hasCloseBtn={${hasCloseBtn ? 'true' : 'false'}}
+          closeCallback={() => setToast(false)}
+          description="${description}"
+          title="${TITLE}"
+          duration={${TOAST_NO_REDUX_DURATION}}
+          classNames={${classNames ? `'${classNames}'` : null}}
+        ${customChild ? '>        \n          <p>To close, press x. <span role="img" aria-label="child">👶</span></p>\n        </Toast>' : '/>'}
+      </div>
+    );
+  }
+  
+  export default App;
+  `;
 
   return (
     <div className="Options">
@@ -60,16 +90,32 @@ function Options(props) {
           alt=""
         />
       </p>
+      <code>npm i react-toast-component</code>
+      <Highlight {...defaultProps} code={exampleCode} language="jsx">
+        {({ className, style, tokens, getLineProps, getTokenProps }) => (
+          <pre className={className} style={style}>
+            {tokens.map((line, i) => (
+              <div {...getLineProps({ line, key: i })}>
+                {line.map((token, key) => (
+                  <span {...getTokenProps({ token, key })} />
+                ))}
+              </div>
+            ))}
+          </pre>
+        )}
+      </Highlight>
       <Toast
         isOpen={isOpen}
-        title={`${txt ? ` ${txt}` : ""} Notification 🍞`}
+        title={TITLE}
         description={description}
-        autoDismiss={autoDismiss}
+        hasAutoDismiss={autoDismiss}
         hasCloseBtn={hasCloseBtn}
         duration={TOAST_NO_REDUX_DURATION}
         closeCallback={() => setToast(closeOptions)}
         classNames={classNames}
-      />
+      >
+        {customChild ? <p>To close, press x. <span role="img" aria-label="child">👶</span></p> : null}
+      </Toast>
       <div className="Options--buttons">
         {OPTIONS(defaultOptions).map(options => {
           const { classNames } = options;

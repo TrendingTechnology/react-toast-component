@@ -23,6 +23,7 @@ body {
   letter-spacing: -1px;
   background: rgb(80, 204, 176);
   margin: 0;
+  overflow-x: hidden;
 }
 
 p {
@@ -36,4 +37,9 @@ a {
 h1 {
   font-family: "Pacifico", cursive;
   line-height: 1;
+}
+
+code {
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+  font-size: 13px;
 }
