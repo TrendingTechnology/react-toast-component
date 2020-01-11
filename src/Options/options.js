@@ -3,9 +3,10 @@ const OPTIONS = (defaultOptions) => [
   {
     isOpen: true,
     autoDismiss: false,
-    description: "To close this toast, press x.",
+    description: "",
     hasCloseBtn: true,
-    text: "No Dimiss"
+    text: "No Dimiss",
+    customChild: true
   },
   {
     isOpen: true,

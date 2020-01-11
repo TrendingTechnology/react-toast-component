@@ -21,6 +21,9 @@ body {
   position: relative;
   font-family: "Indie Flower", cursive;
   letter-spacing: -1px;
+  background: rgb(80, 204, 176);
+  margin: 0;
+  overflow-x: hidden;
 }
 
 p {
@@ -32,6 +35,17 @@ a {
 }
 
 h1 {
-  font-family: "Pacifico", serif;
-  line-height: 25px;
+  font-family: "Pacifico", cursive;
+  line-height: 1;
+}
+
+code {
+  display: block;
+  margin-top: 20px;
+}
+
+.gist {
+  margin-top: 28px;
+  width: 95vw;
+  max-width: 700px;
 }
