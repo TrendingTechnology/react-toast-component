@@ -1,7 +1,21 @@
+.Options {
+  text-align: center;
+}
+
+.Options h1 {
+  font-size: 42px;
+  margin-bottom: 42px;
+}
+
 .Options h1, .Options p, .Options--buttons {
   letter-spacing: initial;
   width: 100vw;
-  text-align: center;
+}
+
+.Options--img {
+  width: 100vw;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .Options--buttons {
@@ -20,10 +34,43 @@
   padding: 0 5px;
 }
 
+.Options--icons svg {
+  width: 22px;
+  height: 22px;
+}
+
 .Options--buttons {
-  padding: 20px 10px 40px;
+  padding: 20px 10px 12px;
 }
 
 .Options--badge {
   margin-right: 0.3em;
+}
+
+.Options--attr {
+  font-size: 9px;
+  margin-bottom: 14px;
+}
+
+.Options--attr a {
+  color: antiquewhite;
+}
+
+.Options--code {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-size: 12px;
+  color: #24292e;
+  word-wrap: normal;
+  white-space: pre;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 220px;
+  background-color: #eff0f1;
+  border-radius: 3px;
+  margin-right: 6px;
+  padding: 2px 8px;
 }
