@@ -67,6 +67,7 @@
   "bugs": {
     "url": "https://github.com/tumfoodery/react-toast-component/issues"
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "homepage": "http://toast.monster",
   "config": {
     "commitizen": {
