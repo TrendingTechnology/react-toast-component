@@ -15,8 +15,16 @@
 .Options--img {
   width: 100vw;
   max-width: 500px;
+  transition: height 0.66s ease-out;
   margin: 0 auto;
 }
+
+@media (min-width: 500px) {
+  .Options--img {
+    min-height: 375px;
+  }
+}
+
 
 .Options--buttons {
   letter-spacing: initial;
