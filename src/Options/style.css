@@ -7,7 +7,9 @@
   margin-bottom: 42px;
 }
 
-.Options h1, .Options p, .Options--buttons {
+.Options h1,
+.Options p,
+.Options--buttons {
   letter-spacing: initial;
   width: 100vw;
 }
@@ -64,7 +66,7 @@
 }
 
 .Options--code {
-  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
   font-size: 12px;
   color: #24292e;
   word-wrap: normal;
