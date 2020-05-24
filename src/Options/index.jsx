@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
-import { FaGithub, FaNpm, FaCheck, FaRegCopy } from 'react-icons/fa';
+import { FaGithub, FaNpm, FaCheck, FaRegCopy } from "react-icons/fa";
 import Toast from "../Toast";
 import Button from "../Button";
 
@@ -29,19 +29,19 @@ function Options(props) {
     classNames,
     customChild,
     copied,
-    text: txt
+    text: txt,
   } = toastOptions;
 
   const closeOptions = {
     isOpen: false,
     description,
     text: txt,
-    classNames
+    classNames,
   };
 
   const TITLE = `${txt ? `${txt}` : ""} Notification 🍞`;
 
-  const addOptions = options => {
+  const addOptions = (options) => {
     if (timeout) clearTimeout(timeout);
 
     setToast(closeOptions);
@@ -53,7 +53,12 @@ function Options(props) {
 
   return (
     <div className="Options">
-      <a className="Options--header" href="https://www.npmjs.com/package/react-toast-component"><h1>React Toast Pure Component</h1></a>
+      <a
+        className="Options--header"
+        href="https://www.npmjs.com/package/react-toast-component"
+      >
+        <h1>React Toast Pure Component</h1>
+      </a>
       <p>
         <img
           src="https://img.shields.io/npm/dt/react-toast-component.svg"
@@ -75,10 +80,17 @@ function Options(props) {
         closeCallback={() => setToast(closeOptions)}
         classNames={classNames}
       >
-        {customChild ? <p>To close, press x. <span role="img" aria-label="child">👶</span></p> : null}
+        {customChild ? (
+          <p>
+            To close, press x.{" "}
+            <span role="img" aria-label="child">
+              👶
+            </span>
+          </p>
+        ) : null}
       </Toast>
       <div className="Options--buttons">
-        {OPTIONS(defaultOptions).map(options => {
+        {OPTIONS(defaultOptions).map((options) => {
           const { classNames } = options;
           const className = classNames && classNames[0];
           return (
@@ -91,8 +103,12 @@ function Options(props) {
         })}
       </div>
       <img className="Options--img" src="toast.jpg" loading="lazy" alt="..." />
-      <p className="Options--attr">credit: toaster &amp; friends
-          by <a href="https://dribbble.com/shots/7667697-toaster-friends">KOIOS design</a></p>
+      <p className="Options--attr">
+        credit: toaster &amp; friends by{" "}
+        <a href="https://dribbble.com/shots/7667697-toaster-friends">
+          KOIOS design
+        </a>
+      </p>
       <p className="Options--icons">
         <a href="https://github.com/tumfoodery/react-toast-component">
           <FaGithub />
@@ -103,15 +119,12 @@ function Options(props) {
       </p>
       <code
         onClick={() => {
-          document.querySelector('.Options--code').select()
-          document.execCommand('copy');
-          setToast({...toastOptions, copied: true})
+          document.querySelector(".Options--code").select();
+          document.execCommand("copy");
+          setToast({ ...toastOptions, copied: true });
         }}
       >
-        <input className="Options--code"
-          value="npm i react-toast-component"
-
-        />
+        <input className="Options--code" value="npm i react-toast-component" />
         {copied ? <FaCheck /> : <FaRegCopy />}
       </code>
     </div>
