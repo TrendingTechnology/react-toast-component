@@ -4,36 +4,36 @@ module.exports = {
   mode: "production",
   entry: "./src/Toast/index.jsx",
   output: {
-    path: path.resolve(__dirname, "lib"),
+    path: path.resolve(__dirname, "public/lib"),
     filename: "Toast.js",
     library: "Toast",
     libraryExport: "default",
-    libraryTarget: "umd"
+    libraryTarget: "umd",
   },
   module: {
     rules: [
       {
         test: /\.jsx?$/,
-        use: "babel-loader"
+        use: "babel-loader",
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"]
-      }
-    ]
+        use: ["style-loader", "css-loader"],
+      },
+    ],
   },
   externals: {
     react: {
       root: "React",
       commonjs: "react",
       commonjs2: "react",
-      amd: "react"
+      amd: "react",
     },
     "react-dom": {
       root: "ReactDOM",
       commonjs2: "react-dom",
       commonjs: "react-dom",
-      amd: "react-dom"
-    }
-  }
+      amd: "react-dom",
+    },
+  },
 };
