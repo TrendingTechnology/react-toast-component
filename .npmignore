@@ -2,8 +2,9 @@ src
 .babelrc
 .gitignore
 webpack.config.json
-public/\b(?!lib\b)
+public
 build
 node_modules
 .github
 package-lock.json
+index.d.ts
