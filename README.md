@@ -4,8 +4,9 @@ A lightweight react toast notification component.
 
 <img src="https://sue.fyi/images/toast.png" width="400px" />
 
-<b>Live Demo:</b> https://toast.monster
-<b>Standalone:</b> https://toast.monster/standalone
+Preview:
+[Live Demo](https://toast.monster)
+[Standalone Example](https://toast.monster/standalone/index.html)
 
 (npm: [NPM](https://www.npmjs.com/package/react-toast-component)
 github: [Github](https://github.com/tumfoodery/react-toast-component/blob/master/README.md))
