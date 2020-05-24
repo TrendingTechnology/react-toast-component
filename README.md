@@ -8,7 +8,7 @@ A lightweight react toast notification component.
 
 [Live Demo](https://toast.monster)
 
-[Standalone Example](https://toast.monster/examples/standalone/index.html)
+[Standalone Example](https://toast.monster/examples/standalone/)
 
 (npm: [NPM](https://www.npmjs.com/package/react-toast-component)
 github: [Github](https://github.com/tumfoodery/react-toast-component/blob/master/README.md))
