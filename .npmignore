@@ -7,4 +7,3 @@ build
 node_modules
 .github
 package-lock.json
-index.d.ts
