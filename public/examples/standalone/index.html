@@ -70,16 +70,16 @@
   <body>
     <div id="root"></div>
   </body>
-  <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
-  <script src="https://unpkg.com/react/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.13.1/umd/react.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.13.1/umd/react-dom.development.min.js"></script>
   <script src="/lib/toast.js"></script>
   <!-- <script src="../../lib/toast.js"></script> TO TEST IN DEV -->
   <script type="text/babel">
     function App() {
       const [isOpen, setToast] = React.useState(false);
       return (
-        <>
+        <React.Fragment>
           <h1>Standalone Example</h1>
           <button onClick={() => setToast(true)}>Toast Me</button>
           <img src="https://toast.monster/toast.jpg" loading="lazy" alt="..." />
@@ -89,7 +89,7 @@
             isOpen={isOpen}
             title="App Notification 🍞"
           />
-        </>
+        </React.Fragment>
       );
     }
 
