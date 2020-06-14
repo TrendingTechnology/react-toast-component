@@ -1,17 +1,26 @@
 import React from "react";
-import Options from "./Options";
-import { Provider } from "react-redux";
-import { createStore, combineReducers } from "redux";
-import ToastReducer from "./toastReducer";
+// import Options from "./Options";
+// import { Provider } from "react-redux";
+// import { createStore, combineReducers } from "redux";
+import Toast from "./Toast";
 import "./App.css";
 
-const store = createStore(combineReducers({ ToastReducer }));
+// const store = createStore(combineReducers({ ToastReducer }));
 
 function App() {
+  const [isOpen, setToast] = React.useState(false);
   return (
-    <Provider store={store}>
-      <Options />
-    </Provider> 
+    <>
+      <h1>Toast Example</h1>
+      <button onClick={() => setToast(true)}>Toast Me</button>
+      <img src="https://toast.monster/toast.jpg" loading="lazy" alt="..." />
+      <Toast
+        closeCallback={() => setToast(false)}
+        description="Dunc the Lunk, thick as a castle wall. Your action has been completed."
+        isOpen={isOpen}
+        title="App Notification 🍞"
+      />
+    </>
   );
 }
 

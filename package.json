@@ -1,7 +1,7 @@
 {
   "name": "react-toast-component",
   "version": "1.4.4",
-  "description": " 🍞 A lightweight React toast notification component.",
+  "description": " 🍞 A lightweight React toast notification component. 11 kb ~",
   "main": "public/lib/Toast.js",
   "types": "index.d.ts",
   "dependencies": {
@@ -66,7 +66,7 @@
   "bugs": {
     "url": "https://github.com/tumfoodery/react-toast-component/issues"
   },
-  "homepage": "http://toast.monster",
+  "homepage": "https://toast.monster",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
